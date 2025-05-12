@@ -1,0 +1,37 @@
+.top-navbar {
+    background-color: #2e4d2c; /* Dark green */
+    color: white;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600; /* bold */
+    position: relative;
+  }
+  
+  .arrow-icon {
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+    position: absolute;
+    right: 16px;
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  @media (max-width: 600px) {
+    .top-navbar {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  
+    .arrow-icon {
+      font-size: 16px;
+      right: 12px;
+    }
+  }
+  
