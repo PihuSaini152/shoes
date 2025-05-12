@@ -1,0 +1,37 @@
+.men-main{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: auto;
+    padding-top: 30px;
+}
+.men, li, ul{
+    list-style: none;
+    margin-top: 15px;
+}
+.men h3{
+    font-size: 21px;
+}
+.men p{
+    font-size: 18px;
+    color: rgb(111, 111, 111);
+}
+.men1{
+    height: 140px;
+    width: 500px;
+    background-image: url(/Men/menimg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 8px;
+}
+.men2{
+    height: 140px;
+    width: 500px;
+    background-image: url(/Men/menimg2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 23px;
+}
