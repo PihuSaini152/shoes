@@ -1,5 +1,5 @@
 import React from 'react'
-import Rerun from '/footer/Rerun/rerun.jpg'
+import Rerun from '/Rerun/rerun.jpg'
 import './rerun.css'
 
 function rerun() {
