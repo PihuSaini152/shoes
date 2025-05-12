@@ -1,5 +1,5 @@
 import React from 'react';
-import './socks.css';
+import './card1.css';
 
 const socksData = [
   {
