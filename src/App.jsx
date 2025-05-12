@@ -8,6 +8,7 @@ import Rerun from './pages/Rerun/rerun.jsx'
 import Women from './pages/women/women.jsx'
 import Men from './pages/Men/men.jsx'
 import Home from './pages/Home/Home.jsx'
+import Socks from './pages/Socks/socks.jsx'
 
 
 function App() {
@@ -20,9 +21,10 @@ function App() {
       <Routes>
         <Route path='/Home' element={<Home/>}/>
         <Route path='/Help' element={<Help/>}/>
-         <Route path='/Rerun' element={<Rerun/>}/>
-          <Route path='/Women' element={<Women/>}/>
-          <Route path='/Men' element={<Men/>}/>
+        <Route path='/Rerun' element={<Rerun/>}/>
+        <Route path='/Women' element={<Women/>}/>
+        <Route path='/Men' element={<Men/>}/>
+        <Route path='/Socks' element={<Socks/>}/>
       </Routes>
     <Footer/>
 

@@ -83,8 +83,7 @@ const Footer = () => {
           <img src={Us} alt="Australia" />
           <img src={Eg} alt="England" />
           <img src={China} alt="China" />
-          <img src={Jp} alt="Japan" />
-          <br />
+          <img src={Jp} alt="Japan" /><br />
           <img src={Sk} alt="South Korea" />
           <img src={Uae} alt="UAE" />
           <img src={Unkow} alt="Unknown" />
