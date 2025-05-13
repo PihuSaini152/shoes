@@ -9,7 +9,7 @@ import Women from './pages/women/women.jsx'
 import Men from './pages/Men/men.jsx'
 import Home from './pages/Home/Home.jsx'
 import Socks from './pages/Socks/socks.jsx'
-import Arrival from './pages/Newarrivals/arrival.jsx'
+import Arrival from '/arrival.jsx '
 
 
 function App() {
@@ -36,4 +36,4 @@ function App() {
   )
 }
 
-export default App
+export default App
