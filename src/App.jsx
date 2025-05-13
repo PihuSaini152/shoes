@@ -7,7 +7,7 @@ import Footer from './Component/Footer/footer.jsx'
 import Rerun from './pages/Rerun/rerun.jsx'
 import Women from './pages/women/women.jsx'
 import Men from './pages/Men/men.jsx'
-// import Home from './pages/Home/Home.jsx'
+import Home from './pages/Home/Home.jsx'
 // import Socks from './pages/Socks/socks.jsx'
 
 
@@ -19,12 +19,8 @@ function App() {
     <NavMain/>
 
       <Routes>
-        {/* <Route path='/Home' element={<Home/>}/> */}
-<<<<<<< HEAD
+        <Route path='/Home' element={<Home/>}/>
         {/* <Route path='/Help' element={<Help/>}/> */}
-=======
-        <Route path='/Help' element={<Help/>}/>
->>>>>>> dd7ab9f6c9579795ce67a28c15ed9a09db01f04b
         <Route path='/Rerun' element={<Rerun/>}/>
         <Route path='/Women' element={<Women/>}/>
         <Route path='/Men' element={<Men/>}/>
@@ -38,4 +34,4 @@ function App() {
   )
 }
 
-export default App
+export default App
