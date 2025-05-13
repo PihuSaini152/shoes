@@ -4,4 +4,8 @@
     background-image: url('top image.avif');
     background-position: center;
     background-size: cover;
+    border: 1px solid red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
 }
