@@ -1,0 +1,11 @@
+.arrival-header{
+    max-width: 100%;
+    height: 300px;
+    background-image: url('top image.avif');
+    background-position: center;
+    background-size: cover;
+    border: 1px solid red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
