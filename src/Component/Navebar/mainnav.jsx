@@ -18,10 +18,10 @@ const NavMain = () => {
           {menuOpen ? <IoMdClose size={24} /> : <FaBars size={20} />}
         </div>
         <ul className="nav-links left">
-          <li><a href="#">Men</a></li>
+          <li><Link to="/Men">Men</Link></li>
           <li><Link to="/Women">Women</Link></li>
           <li><Link to="/Socks">Socks</Link></li>
-          <li><a href="#">New Arrivals</a></li>
+          <li><Link to="/Arrivals"> Arrivals</Link></li>
         </ul>
       </div>
 

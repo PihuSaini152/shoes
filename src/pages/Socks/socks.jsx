@@ -1,12 +1,13 @@
-import React from 'react'
-import Header from './pages/Socks/header.jsx'
+import React, { Fragment } from "react";
+import BG from "./background.jpg"; 
+import './socks.css'
 
-function socks() {
+function Socks() {
   return (
-    <>
-    <Header/>
-    </>
-  )
+     <div className="Bgimg">
+      <img src={BG} alt="" />
+     </div>
+  );
 }
 
-export default socks
+export default Socks;
