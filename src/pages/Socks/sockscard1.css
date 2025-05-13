@@ -3,11 +3,12 @@
   flex-wrap: wrap;
   gap: 20px;
   padding: 40px;
-  justify-content: center;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
 }
 
 .sock-card {
-  width: 250px;
+  width: calc(25% - 20px); 
   border: 1px solid #e0e0e0;
   padding: 15px;
   background: #fff;
@@ -16,6 +17,20 @@
   font-family: Arial, sans-serif;
   position: relative;
   overflow: hidden;
+}
+
+
+@media (max-width: 1200px) {
+  .sock-card {
+    width: calc(33.33% - 20px); 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .sock-card {
+    width: 100%; 
+  }
 }
 
 .sock-img {
@@ -43,7 +58,6 @@
   margin-bottom: 10px;
 }
 
-/* Quick Add section appears only on hover */
 .quick-add {
   margin-top: 10px;
   animation: fadeIn 0.3s ease-in-out;
@@ -76,7 +90,6 @@
   color: white;
 }
 
-/* Show Quick Add only on hover */
 .sock-card .quick-add {
   display: none;
 }
@@ -88,4 +101,11 @@
 @keyframes fadeIn {
   from { opacity: 0 }
   to { opacity: 1 }
+}
+
+/* Heading Styling */
+.s-headings {
+  font-size: 15px;
+  padding-top: 100px;
+  padding-left: 50px;
 }

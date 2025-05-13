@@ -1,7 +1,13 @@
 .bacgroundimg {
-  background-image: url('/socks/background.jpg'); 
+  background-image: url('/Socks/background.jpg'); 
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 300px;
   width: 100%;
+}
+.socksh1{
+  color: white;
+  text-align: center;
+  padding-top: 80px;
+  
 }
