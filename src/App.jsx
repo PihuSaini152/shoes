@@ -20,7 +20,11 @@ function App() {
 
       <Routes>
         {/* <Route path='/Home' element={<Home/>}/> */}
+<<<<<<< HEAD
         {/* <Route path='/Help' element={<Help/>}/> */}
+=======
+        <Route path='/Help' element={<Help/>}/>
+>>>>>>> dd7ab9f6c9579795ce67a28c15ed9a09db01f04b
         <Route path='/Rerun' element={<Rerun/>}/>
         <Route path='/Women' element={<Women/>}/>
         <Route path='/Men' element={<Men/>}/>
