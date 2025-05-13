@@ -1,12 +1,11 @@
-import React, { Fragment } from "react";
-import BG from "./background.jpg"; 
-import './socks.css'
+import React from "react";
+import "./socks.css";
 
 function Socks() {
   return (
-     <div className="Bgimg">
-      <img src={BG} alt="" />
-     </div>
+    <div className="bacgroundimg">
+        
+    </div>
   );
 }
 
