@@ -1,54 +1,60 @@
 import React from 'react';
-import './card1.css';
+import './sockscard2.css';
+import Socksiteam from './socksitem.jsx'
 
 const socksData = [
   {
     id: 1,
-    img: '/Socks/1.jpg',
+    img: '/Socks/23.jpg',
     title: 'Anytime No Show Sock',
-    color: 'Medium Grey',
-    price: '$14',
+    color: 'Deep navy',
+    price: '$35',
   },
   {
     id: 2,
-    img: '/Socks/2.jpg',
+    img: '/Socks/24.jpg',
     title: 'Anytime No Show Sock',
-    color: 'Blizzard',
-    price: '$14',
+    color: 'white',
+    price: '$35',
   },
   {
     id: 3,
-    img: '/Socks/3.jpg',
+    img: '/Socks/26.jpg',
     title: 'Anytime No Show Sock',
-    color: 'Natural Black',
-    price: '$14',
+    color: ' Blizzard',
+    price: '$35',
   },
   {
     id: 4,
-    img: '/Socks/4.jpg',
+    img: '/Socks/27.jpg',
     title: 'Anytime No Show Sock',
-    color: 'White',
-    price: '$14',
+    color: 'natural gold grey',
+    price: '$35',
   },
   {
     id: 5,
-    img: '/Socks/5.jpg',
+    img: '/Socks/28.jpg',
     title: 'Anytime No Show Sock',
     color: 'Blue Grey',
-    price: '$14',
+    price: '$35',
   },
   {
     id: 6,
-    img: '/Socks/7.jpg',
+    img: '/Socks/29.jpg',
     title: 'Anytime No Show Sock',
     color: 'Heather Grey',
-    price: '$14',
+    price: '$35',
   },
+
  
 ];
 
 const Socks = () => {
   return (
+    <>    <div className="s-headings">
+        <h1>3-Pack Socks</h1>
+
+      </div>
     <div className="socks-container">
       {socksData.map((item) => (
         <div className="sock-card" key={item.id}>
@@ -68,6 +74,10 @@ const Socks = () => {
         </div>
       ))}
     </div>
+    <Socksiteam/>
+    </>
+    
+
   );
 };
 
