@@ -60,7 +60,7 @@ function women() {
               color: "white",
               fontSize: "22px",
               height:"140px"
-            }}>MEN'S NEW ARRIVALS</h3>
+            }}>WOMEN'S NEW ARRIVALS</h3>
           </div>
           <div className="women2">
             <h3 style={{

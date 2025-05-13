@@ -58,7 +58,7 @@ function men() {
               alignItems: "center",
               color: "white",
               fontSize: "22px",
-              height:"140px"
+              height: "140px"
             }}>MEN'S NEW ARRIVALS</h3>
           </div>
           <div className="men2">
@@ -68,7 +68,7 @@ function men() {
               alignItems: "center",
               color: "white",
               fontSize: "22px",
-              height:"140px"
+              height: "140px"
             }}>BESTSELLERS</h3>
           </div>
         </div>
