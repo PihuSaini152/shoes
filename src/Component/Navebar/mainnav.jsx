@@ -21,7 +21,7 @@ const NavMain = () => {
           <li><Link to="/Men">Men</Link></li>
           <li><Link to="/Women">Women</Link></li>
           <li><Link to="/Socks">Socks</Link></li>
-          <li><Link to="/Arrivals"> Arrivals</Link></li>
+          <li><Link to="/Arrival"> Arrivals</Link></li>
         </ul>
       </div>
 
