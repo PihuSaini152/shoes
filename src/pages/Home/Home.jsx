@@ -4,6 +4,7 @@ import './home.css/'
 import Nav3 from '..//../pages/Navebar3/nav3.jsx'
 import Head1 from '/home/homeimg1.jpg'
 import Head2 from '/home/homeimg2.jpg'
+import Homecard from './homecard1.jsx'
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -71,6 +72,15 @@ const Home = () => {
           </button>
         </div>
       </header>
+    </div>
+
+    <Homecard/>
+
+    <div className="secendheader">
+   <h1>We Make Better Things In A Better Way</h1>
+   <h4>By looking to the world’s greatest innovator—Nature—we create shoes that deliver <br />
+   unrivaled comfort that you feel good in and feel good about.</h4>
+
     </div>
     </>
   );
