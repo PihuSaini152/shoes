@@ -136,3 +136,12 @@
     font-size: 12px;
   }
 }
+
+
+/* 2nd header css */
+
+.secendheader{
+  text-align: center;
+  background-image: url("homeimg3.jpg");
+  height: 300px;
+}
