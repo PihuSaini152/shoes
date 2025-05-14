@@ -33,7 +33,7 @@ const NavMain = () => {
         <ul className="nav-links right">
           <li><a href="#">Sustainability</a></li>
           <li><Link to="/Rerun">ReRun</Link></li>
-          <li><a href="#">Stores</a></li>
+          <li><Link to ="/Stores">Stores</Link></li>
         </ul>
         <div className="nav-icons">
           <FiSearch />
