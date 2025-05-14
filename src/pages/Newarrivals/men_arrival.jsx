@@ -12,7 +12,9 @@ function men_arrival() {
 </div>
     </div>
       <div className="men-main1">
-        <h1 >men arriaval</h1>
+        <h1 >Shoes</h1>
+        <P>Classic sneakers. Sporty running shoes. Comfy loafers. We got the wear-all day <br />
+         (with everything) shoes you and your closet need.</P>
       </div>
     </>
   )
