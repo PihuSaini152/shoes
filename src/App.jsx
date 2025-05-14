@@ -10,6 +10,8 @@ import Men from './pages/Men/men.jsx'
 import Home from './pages/Home/Home.jsx'
 import Socks from './pages/Socks/socks.jsx'
 import Arrival from './pages/Newarrivals/arrival.jsx'
+import Stores from './pages/Stores/store.jsx'
+import Women_Arrival from './pages/Newarrivals/women_arrival.jsx'
 
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
         <Route path='/Men' element={<Men/>}/>
         <Route path='/Socks' element={<Socks/>}/>
         <Route path='/Arrival' element={<Arrival/>}/>
+         <Route path='/Stores' element={<Stores/>}/>
+          <Route path='/Women_Arrival' element={<Women_Arrival/>}/>
       </Routes>
     <Footer/>
 
