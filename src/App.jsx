@@ -12,6 +12,7 @@ import Socks from './pages/Socks/socks.jsx'
 import Arrival from './pages/Newarrivals/arrival.jsx'
 
 
+
 function App() {
   return (
     <>
@@ -27,6 +28,7 @@ function App() {
         <Route path='/Men' element={<Men/>}/>
         <Route path='/Socks' element={<Socks/>}/>
         <Route path='/Arrival' element={<Arrival/>}/>
+        
       </Routes>
     <Footer/>
 
