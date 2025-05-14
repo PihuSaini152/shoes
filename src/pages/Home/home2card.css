@@ -1,0 +1,106 @@
+.homecardmain{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+    padding-top: 60px;
+    padding-bottom: 50px;
+
+}
+.homecard0{
+height: 600px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+.hcard1{
+    height: 600px;
+    width: 47%;
+    /* border: 1px solid blue; */
+    background: url(/home/homecard2.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+.hcard1:hover{
+ transform: rotateY('20px');
+}
+.hcardtext{
+color: white;
+position: absolute;
+bottom: 80px;
+left: 20px;
+right: 0;
+margin-left: auto;
+margin-left: auto;
+}
+.hcardtext button{
+    height: 40px;
+    width: 120px;
+    margin-top: 40px;
+    border: none;
+}
+.hcardtext button:hover{
+background-color: black;
+color: white;
+}
+.hcard2{
+    height: 600px;
+    width: 47%;
+    /* border: 1px solid blue; */
+    transition: 0.3s ease-in-out;
+}
+.shoe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 5px;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+.shoe-card {
+  background-color: #ffffff;
+  /* border-radius: 15px; */
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  position: relative;
+  height: 270px;
+}
+.shoesimg{
+    position: absolute;
+}
+.shoestext{
+    position: absolute;
+    bottom: 0px;
+}
+.shoe-card:hover {
+  transform: translateY(10px);
+}
+
+.shoe-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border-bottom: 1px solid #e0e0e0; */
+}
+
+.shoe-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 15px;
+}
+
+.shoe-card p {
+  margin: 0 15px 10px;
+  color: #666;
+}
+
+.shoe-card p:last-child {
+  font-size: 1rem;
+  font-weight: bold;
+  /* color: #007bff; */
+}

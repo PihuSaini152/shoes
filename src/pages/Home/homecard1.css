@@ -1,44 +1,46 @@
 .homaecard {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 30px;
   padding: 20px;
   padding-top: 70px;
   padding-bottom: 80px;
+  height: auto;
 }
 
 .homecardbox {
-  background-color: black;
+  /* background-color: black; */
   border: 1px solid #ddd;
   border-radius: 8px;
-  
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 350px;
-  transition: transform 0.3s;
-  height: 500px;
+  width: 30vw;
+  height: 550px;
   position: relative;
 }
 
-.homecardbox:hover {
+.homecard-image:hover {
   transform: scale(1.04);
 }
 .homecardtext{
     position: absolute;
-    top: 150px;
+    top: 100px;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    color: white;
 }
 .homecard-image {
-  width: 95%;
-  height: 95%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 8px;
   /* margin-bottom: 10px;    */
   background: yellow;
+  transition: transform 0.3s ease-in-out;
+
 }
 .homecard-image img {
     height: 300px;
@@ -86,4 +88,16 @@
     display: flex;
     justify-content: center;
     gap: 10px;
+}
+@media (max-width:1000px) {
+  .homecardbox {
+  /* background-color: black; */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  height: 550px;
+  position: relative;
+}
 }
