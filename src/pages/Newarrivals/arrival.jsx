@@ -1,5 +1,7 @@
 import React from 'react'
 import './arrival.css'
+import { Link } from 'react-router-dom'
+import Women_arrival from './women_arrival'
 
 
 function arrival() {
@@ -9,9 +11,14 @@ function arrival() {
 
       </div>
       <div className="arrival-main">
-        <h2>MEN`S ARRIVALS </h2>
-        <h2>WOMEN`S ARRIVALS</h2>
+        <Link to={'/men_arrival'}>
+         <h2>MEN`S ARRIVALS </h2></Link>
+       
+        <Link to = "/women_arrival">
+        <h2>WOMEN`S ARRIVALS</h2></Link>
+        
       </div>
+      <Women_arrival/>
     </>
   )
 }
