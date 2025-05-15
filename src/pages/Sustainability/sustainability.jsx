@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import './sustainability.css'
 import { IoIosArrowForward } from "react-icons/io";
 import { IoMdCloseCircleOutline } from "react-icons/io";
-
 import Sustainimg3 from '/Sustainability/sustainimg3.jpg'
 import Sustainimg4 from '/Sustainability/sustainimg4.jpg'
 
