@@ -1,0 +1,40 @@
+.menshoes-main {
+    height: auto;
+    width: 100%;
+    border: 2px solid;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menshoes-topnav {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid;
+}
+
+.menshoes-topnav-left {
+    display: inline-flex;
+    gap: 5px;
+}
+.menshoes-topnav-right{
+    display: inline-flex;
+    border: 2px solid;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.menshoes-topnav-right button{
+    padding: 5px 15px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+.menshoes-topnav-right button.active{
+    background: black;
+    color: white;
+}

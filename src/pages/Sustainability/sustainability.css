@@ -1,0 +1,99 @@
+.sustain-main {
+    height: auto;
+    width: 100%;
+}
+
+.sustain-text {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 60PX;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.sustain h3 {
+    font-size: 21px;
+}
+
+.sustainA p {
+    font-size: 18px;
+    color: rgb(111, 111, 111);
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.sustain1 {
+    height: 120px;
+    width: 500px;
+    background-image: url(/Sustainability/sustainimg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.sustain2 {
+    height: 120px;
+    width: 500px;
+    background-image: url(/Sustainability/sustainimg2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 23px;
+    cursor: pointer;
+}
+
+.sustainMenu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* sustainmenu  */
+
+.sustain-Menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sustain-Menu.active {
+    display: flex;
+}
+
+.sustain-Menu li {
+    display: flex;
+}
+
+.sustain-Menu li h3 {
+    font-size: 16px;
+    position: relative;
+}
+.sustain-Menu li h3::after {
+     content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: black;
+    transition: width 0.3s;
+}
+
+  @media screen and (max-width: 770px) {
+    .sustain-text {
+      display: none;
+    }
+  
+    .sustainMenu {
+      display: block;
+    }
+  }

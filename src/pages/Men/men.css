@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-evenly;
     gap: auto;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 .men, li, ul{
     list-style: none;
@@ -20,7 +20,7 @@
 .men1{
     height: 140px;
     width: 500px;
-    background-image: url(/Men/menimg1.jpg);
+    background-image: url(/men/menimg1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@
 .men2{
     height: 140px;
     width: 500px;
-    background-image: url(/Men/menimg2.jpg);
+    background-image: url(/men/menimg2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
