@@ -39,25 +39,7 @@ const homeimg = [
 const homecard = () => {
  
 
-  // const [products, setProducts] = useState([]);
-  // const [loading, setLoading] = useState(true);
-
-  // useEffect(() => {
-  //   fetch("https://run.mocky.io/v3/bfc58352-6fe2-41cb-9f34-1a601b8ef577")
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       setProducts(data);
-  //       setLoading(false);
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error fetching products:", error);
-  //       setLoading(false);
-  //     });
-  // }, []);
-
-  // if (loading) {
-  //   return <h2>Loading products...</h2>;
-  // }
+ 
 
   return (
     <div className="homaecard">
