@@ -13,7 +13,7 @@ import Arrival from './pages/Newarrivals/arrival.jsx'
 import Stores from './pages/Stores/store.jsx'
 import Women_Arrival from './pages/Newarrivals/women_arrival.jsx'
 import Men_Arrival from './pages/Newarrivals/men_arrival.jsx'
-
+import Susbainlity from './pages/Sustainability/sustainability.jsx'
 
 function App() {
   return (
@@ -33,6 +33,7 @@ function App() {
          <Route path='/Stores' element={<Stores/>}/>
          <Route path='/Women_Arrival' element={<Women_Arrival/>}/>
          <Route path='/Men_Arrival' element={<Men_Arrival/>}/>
+          <Route path='/Susbainlity' element={<Susbainlity/>}/>
       </Routes>
     <Footer/>
 

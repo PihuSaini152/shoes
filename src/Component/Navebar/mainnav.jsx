@@ -31,7 +31,8 @@ const NavMain = () => {
 
       <div className="nav-right">
         <ul className="nav-links right">
-          <li><a href="#">Sustainability</a></li>
+          <li><Link to="/Susbainlity
+          ">Sustainability</Link></li>
           <li><Link to="/Rerun">ReRun</Link></li>
           <li><Link to ="/Stores">Stores</Link></li>
         </ul>
