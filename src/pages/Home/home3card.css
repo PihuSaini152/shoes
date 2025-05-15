@@ -1,0 +1,58 @@
+.homecard3main{
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.homecard3{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.homein1{
+    height: 600px;
+    width: 49%;
+    background: url(/home/home3cardimg2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.homein2{
+    height: 600px;
+    width: 49%;
+    background: url(/home/home3cardimg1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.text3rd{
+     position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 100px;
+    color: white;
+}
+.text3rd h3{
+    margin-top: 10px;
+}
+.hm3rdbutton{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 100px;
+}
+.hm3rdbutton button{
+    height: 40px;
+    width: 130px;
+    border: none;
+    background-color: white;
+    margin-left: 20px;
+}
+.hm3rdbutton button:hover{
+   background-color: rgb(37, 37, 37);
+   color: white;
+}
