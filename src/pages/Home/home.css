@@ -145,7 +145,7 @@
   background-image: url("/home/homeimg3.jpg");
   background-position: center;
   background-size: cover;
-  height: 300px;
+  height: 360px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -153,5 +153,5 @@
   color: white;
 }
 .secendheader-flex{
-  height: 150px;
+  height: 120px;
 }

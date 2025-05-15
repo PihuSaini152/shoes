@@ -19,7 +19,7 @@ const shoesData = [
     name: "Tree Runner Go",
     color: "Natural White/Rustic Orange",
     price: 120,
-    img: homeshoes2
+    img: homeshoes4
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const shoesData = [
     name: "Tree Runner",
     color: "Rustic Orange",
     price: 98,
-    img: homeshoes4
+    img: homeshoes2
   }
 ];
 

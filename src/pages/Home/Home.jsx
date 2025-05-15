@@ -6,6 +6,7 @@ import Head1 from '/home/homeimg1.jpg'
 import Head2 from '/home/homeimg2.jpg'
 import Homecard from './homecard1.jsx'
 import Homecard2 from './home2card.jsx'
+import Homecard3 from './home3card.jsx'
 
 
 const Home = () => {
@@ -88,6 +89,7 @@ const Home = () => {
     </div>
 
     <Homecard2/>
+    <Homecard3/>
     </>
   );
 };
