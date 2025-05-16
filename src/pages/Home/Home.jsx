@@ -7,6 +7,8 @@ import Head2 from '/home/homeimg2.jpg'
 import Homecard from './homecard1.jsx'
 import Homecard2 from './home2card.jsx'
 import Homecard3 from './home3card.jsx'
+import Slideshoes from './slideshoes.jsx'
+import Emailhome from './emailhome.jsx'
 
 
 const Home = () => {
@@ -90,6 +92,8 @@ const Home = () => {
 
     <Homecard2/>
     <Homecard3/>
+    <Slideshoes/>
+    <Emailhome/>
     </>
   );
 };
