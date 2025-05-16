@@ -16,6 +16,8 @@
     background-position: center;
     background-size: cover;
     position: relative;
+  transition: transform 0.3s ease-in-out;
+    
 }
 .homein2{
     height: 600px;
@@ -24,6 +26,14 @@
     background-position: center;
     background-size: cover;
     position: relative;
+  transition: transform 0.3s ease-in-out;
+
+}
+.homein2:hover{
+  transform: scale(1.02);
+}
+.homein1:hover{
+  transform: scale(1.02);
 }
 .text3rd{
      position: absolute;
