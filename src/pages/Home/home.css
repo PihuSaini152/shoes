@@ -142,6 +142,16 @@
 
 .secendheader{
   text-align: center;
-  background-image: url("homeimg3.jpg");
-  height: 300px;
+  background-image: url("/home/homeimg3.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 360px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.secendheader-flex{
+  height: 120px;
 }
