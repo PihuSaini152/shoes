@@ -56,3 +56,15 @@
    background-color: rgb(37, 37, 37);
    color: white;
 }
+
+@media (max-width:750px) {
+    .homecard3{
+        flex-wrap: wrap;
+    }
+    .homein1{
+        width: 100%;
+    }
+    .homein2{
+        width: 100%;
+    }
+}

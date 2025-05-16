@@ -26,6 +26,7 @@ function home3card() {
                     <button>SHOP WOMEN</button>
                 </div>
             </div>
+            
         </div>
     </div>
     </>
