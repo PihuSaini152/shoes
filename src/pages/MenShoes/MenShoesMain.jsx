@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './MenShoesMain.css'
-import ShoesMen from './ShoesMen.jsx'
+import { Link } from 'react-router-dom';
+import ShoesMen from './pages/MenShoes/ShoesMen.jsx'
+
 
 function menShoes() {
     const [selected, setSelected] = useState("MEN");
@@ -10,7 +12,7 @@ function menShoes() {
             <div className="menshoes-main">
                 <div className="menshoes-topnav">
                     <div className="menshoes-topnav-left">
-                        <h5>Home/</h5>
+                        <Link to="/Home" style={{color:"black"}}><h5>Home/</h5></Link>
                         <h5>Men's Shoes</h5>
                     </div>
                     <div className="menshoes-topnav-right">
@@ -22,7 +24,8 @@ function menShoes() {
                 <div className="menshoes-content">
                     {selected === "MEN" && (
                        <div>
-                         <ShoesMen/>
+                            <ShoesMen />
+                        
                        </div>
                     )}
                 </div>
