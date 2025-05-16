@@ -38,6 +38,9 @@ function shoesmen() {
                         <li>All-Weather</li>
                         <li>Bestsellers</li>
                         <li>Sale Shoes</li>
+                        <li>Sale Shoes1</li>
+                        <li>Sale Shoes3</li>
+
                     </ul>
                 </div>
 
@@ -58,6 +61,7 @@ function shoesmen() {
 
                 <div className="shoesmen-size">
                     <h3>SIZES</h3>
+                    <h3>All sizes</h3>
 
                     <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(60px,1fr))", gap: "5px", marginTop: "20px" }}>
                         {allSizes.map(size => (
