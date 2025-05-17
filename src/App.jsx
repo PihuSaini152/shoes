@@ -18,6 +18,7 @@ import Privacy from './pages/Privacy/privacy.jsx'
 import Treams from './pages/Treams/tream.jsx'
 
 
+
 function App() {
   return (
     <>
@@ -46,7 +47,7 @@ function App() {
         
       </Routes>
     <Footer/>
-  
+ 
 
     </Router>
     

@@ -1,0 +1,168 @@
+.watch2-wrapper {
+  width: 100%;
+  padding: 40px 80px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.watch2-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  gap: 40px;
+}
+
+/* Remove this */
+/* .watch2-section.reverse {
+  flex-direction: row-reverse;
+} */
+
+/* Instead, do this for Episode 2 & 4 */
+.watch2-section.reverse .watch2-left {
+  order: 1;  /* Text on left */
+}
+
+.watch2-section.reverse .watch2-right {
+  order: 2;  /* Image on right */
+  position: relative;
+}
+
+.watch2-left,
+.watch2-right {
+  flex: 1;
+  position: relative;
+}
+
+.watch2-left h4,
+.watch2-right h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.watch2-left h2,
+.watch2-right h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.watch2-left p,
+.watch2-right p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.watch2-right img,
+.watch2-left img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.watch-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+  color: white;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.email-signup-section {
+  background: #f9f9f9;
+  padding: 30px 40px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 40px auto 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.email-signup-section h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.email-signup-section p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.email-input {
+  flex: 1 1 300px;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.email-input:focus {
+  border-color: #000;
+}
+
+.signup-btn {
+  padding: 12px 25px;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.signup-btn:hover {
+  background-color: #333;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+  gap: 8px;
+  margin-bottom: 12px;
+  justify-content: center;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.note-text {
+  font-size: 12px;
+  color: #999;
+}
+
+.note-text a {
+  color: #666;
+  text-decoration: underline;
+}
+
+.note-text a:hover {
+  color: black;
+}
