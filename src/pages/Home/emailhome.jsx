@@ -24,8 +24,8 @@ function emailhome() {
 
       <p className="emailhome-note">
         Note: You can opt-out at any time. See our
-        <Link to="" className="emailhome-link"> Privacy Policy</Link> and
-        <Link to="" className="emailhome-link"> Terms</Link>.
+        <Link to="/Privacy" className="emailhome-link"> Privacy Policy</Link> and
+        <Link to="/Treams" className="emailhome-link"> Terms</Link>.
       </p>
     </section>
   );
