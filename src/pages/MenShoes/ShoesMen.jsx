@@ -8,6 +8,22 @@ const allSizes = [
     "14", "W5/M3", "W6/M4", "W7/M5", "W8/M6", "W9/M7", "W10/M8", "W11/M9"
 ];
 
+const bestForOptions = ["Everyday", "Warm Weather", "Active", "Cool Weather", "Wet Weather"];
+
+const materialsOption = ["Tree Fiber Blend", "Canvas", "Wool", "Organic Cotton", "Sugarcane Blend"];
+
+const colorOption = [
+    { name: "Blue", hex: "#3B82F6" },
+    { name: "White", hex: "#FFFFFF" },
+    { name: "Orange", hex: "#F97316" },
+    { name: "Green", hex: "#22C55E" },
+    { name: "Black", hex: "#000000" },
+    { name: "Beige", hex: "#F5F5DC" },
+    { name: "Grey", hex: "#9CA3AF" },
+    { name: "Brown", hex: "#A52A2A" },
+    { name: "Red", hex: "#EF4444" }
+];
+
 function shoesmen() {
     const [filters, setFilters] = useState([]);
 
@@ -25,6 +41,36 @@ function shoesmen() {
         }
     };
 
+    const toggleBestFor = (occation) => {
+        if (filters.some(f => f.label === occation)) {
+            // Already selected → remove it
+            setFilters(filters.filter(f => f.label !== occation));
+        } else {
+            // Not selected → add it
+            setFilters([...filters, { label: occation, type: "occation" }]);
+        }
+    };
+
+    const toggleMaterial = (material) => {
+        if (filters.some(f => f.label === material)) {
+            // Already selected → remove it
+            setFilters(filters.filter(f => f.label !== material));
+        } else {
+            // Not selected → add it
+            setFilters([...filters, { label: material, type: "material" }]);
+        }
+    };
+
+    const toggleColor = (color) => {
+        if (filters.some(f => f.label === color.name)) {
+            // Already selected → remove it
+            setFilters(filters.filter(f => f.label !== color.name));
+        } else {
+            // Not selected → add it
+            setFilters([...filters, { label: color.name, type: "color" }]);
+        }
+    };
+
     return (
         <>
             <div className="shoesmen-sidebar">
@@ -38,30 +84,28 @@ function shoesmen() {
                         <li>All-Weather</li>
                         <li>Bestsellers</li>
                         <li>Sale Shoes</li>
-                        <li>Sale Shoes1</li>
-                        <li>Sale Shoes3</li>
 
                     </ul>
                 </div>
 
                 <div className="shoesmen-filterby">
                     <h2>Filter By:</h2>
-                    <div className="shoesmen-filters" style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+                    <div className="shoesmen-filters" style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginTop: "10px" }}>
                         {filters.map((filter) => (
-                            <div key={filter.label} style={{ backgroundColor: "gray", color: "black", borderRadius: "20px", padding: "5px", display:"flex" }}>
-                                <h3>{filter.label}</h3>
-                                <IoMdCloseCircleOutline onClick={() => removeFilter(filter.label)} style={{ marginLeft: "8px", fontSize: "20px" }} />
+                            <div key={filter.label} style={{ color: "black", borderRadius: "40px", padding: "2px", display: "flex", border: "2px solid black" }}>
+                                <p>{filter.label}</p>
+                                <IoMdCloseCircleOutline onClick={() => removeFilter(filter.label)} style={{ marginLeft: "4px", fontSize: "19px", color: "gray" }} />
                             </div>
-                        ))};
+                        ))}
                         {filters.length > 0 && (
-                            <button onClick={clearAll} style={{ background: "black", border: "none", color: "white", marginLeft: "8px", padding:"4px" }}>Clear All</button>
+                            <button onClick={clearAll} style={{ background: "black", border: "none", color: "white", marginLeft: "8px", padding: "4px" }}>Clear All</button>
                         )}
                     </div>
                 </div>
 
                 <div className="shoesmen-size">
                     <h3>SIZES</h3>
-                    <h3>All sizes</h3>
+                    <p style={{ fontSize: "15px", marginTop: "10px" }}>Most of our shoes only come in full sizes. If you’re a half size, select your nearest whole size too.</p>
 
                     <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(60px,1fr))", gap: "5px", marginTop: "20px" }}>
                         {allSizes.map(size => (
@@ -77,6 +121,55 @@ function shoesmen() {
                     </div>
 
                 </div>
+
+                <div className="shoesmen-BESTFOR">
+                    <h3>BEST FOR</h3>
+                    {bestForOptions.map(occation => (
+                        <div key={occation} style={{ marginTop: "15px", cursor: "pointer", marginLeft: "8px", display: "flex", gap: "8px", alignItems: "center" }}>
+                            <input type="checkbox"
+                                checked={filters.some(f => f.label === occation)}
+                                onChange={() => toggleBestFor(occation)}
+                                style={{
+                                    padding: "8px",
+                                    cursor: "pointer"
+                                }} />
+                            <p>{occation}</p>
+                        </div>
+                    ))}
+                </div>
+
+                <div className="shoesmen-Material">
+                    <h3>MATERIALS</h3>
+                    {materialsOption.map(material => (
+                        <div key={material} style={{ marginTop: "15px", cursor: "pointer", marginLeft: "8px", display: "flex", gap: "8px", alignItems: "center" }}>
+                            <input type="checkbox"
+                                checked={filters.some(f => f.label === material)}
+                                onChange={() => toggleMaterial(material)}
+                                style={{
+                                    padding: "8px",
+                                    cursor: "pointer"
+                                }} />
+                            <p>{material}</p>
+                        </div>
+                    ))}
+                </div>
+
+                  <div className="shoesmen-color">
+                    <h3>HUE</h3>
+                    {colorOption.map(color => (
+                        <div key={color.name} style={{ marginTop: "15px", cursor: "pointer", marginLeft: "8px", display: "flex", gap: "8px", alignItems: "center" }}>
+                            <input type="checkbox"
+                                checked={filters.some(f => f.label === color)}
+                                onChange={() => toggleColor(color)}
+                                style={{
+                                    padding: "8px",
+                                    cursor: "pointer"
+                                }} />
+                            <p>{color.name}</p>
+                        </div>
+                    ))}
+                </div>
+
             </div>
 
         </>
