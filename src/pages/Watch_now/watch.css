@@ -1,0 +1,55 @@
+.watch-section {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Hero Section */
+.hero-banner {
+  background-image: url('/Watch_now/Header.gif'); 
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  height: 500px;
+}
+
+.hero-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  padding-top: 100px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.hero-content h4 {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.hero-content h2 {
+  font-size: 24px;
+}
+
+/* Curious Section */
+.curious-section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.curious-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.curious-section p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
