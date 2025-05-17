@@ -7,7 +7,7 @@ const Nav3 = () => {
       
       <div className="nav-links">
         <ul>
-          <li><a href="#">Men's Shoes</a></li>
+          <li><Link to="/Men">Men's Shoes</Link></li>
           <li><a href="#">Women's Shoes</a></li>
           <li><a href="#">New Arrivals</a></li>
         </ul>

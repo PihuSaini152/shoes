@@ -60,7 +60,7 @@ function sustainability() {
                     </div>
 
                 </div>
-                {/* menu open in mediaquery */}
+             
                 <h1 className={`sustain-Menu ${menuOpenSustain ? 'active' : ''}`}>
                     <li>
                         <h3>INITIATIVE</h3>
