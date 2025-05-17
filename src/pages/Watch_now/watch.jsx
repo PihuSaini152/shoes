@@ -1,6 +1,6 @@
 import React from "react";
 import "./watch.css"; 
-// import Watch from './pages/Watch_now/watch.jsx'
+import Watch2 from './watch2.jsx'
 
 const Watch = () => {
   return (
@@ -38,7 +38,7 @@ const Watch = () => {
         </p>
       </div>
     </div>
-    {/* <Watch/> */}
+    <Watch2/>
     </>
   );
 };

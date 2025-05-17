@@ -8,8 +8,8 @@ const Nav3 = () => {
       <div className="nav-links">
         <ul>
           <li><Link to="/Men">Men's Shoes</Link></li>
-          <li><a href="#">Women's Shoes</a></li>
-          <li><a href="#">New Arrivals</a></li>
+          <li><Link to ="./Women">Women's Shoes</Link></li>
+          <li><Link to="/Arrivals">New Arrivals</Link></li>
         </ul>
       </div>
     </nav>
