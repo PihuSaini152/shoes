@@ -14,6 +14,11 @@ import Stores from './pages/Stores/store.jsx'
 import Women_Arrival from './pages/Newarrivals/women_arrival.jsx'
 import Men_Arrival from './pages/Newarrivals/men_arrival.jsx'
 import Susbainlity from './pages/Sustainability/sustainability.jsx'
+import Privacy from './pages/Privacy/privacy.jsx'
+import Treams from './pages/Treams/tream.jsx'
+import Menshoes from './pages/MenShoes/MenShoesMain.jsx'
+
+
 
 function App() {
   return (
@@ -21,9 +26,10 @@ function App() {
     <Router>
     <Nav1/>  
     <NavMain/>
+    
 
       <Routes>
-        <Route path='/Home' element={<Home/>}/>
+        <Route path='/Home' element={<Home/>} />
         <Route path='/Help' element={<Help/>}/>
         <Route path='/Rerun' element={<Rerun/>}/>
         <Route path='/Women' element={<Women/>}/>
@@ -33,9 +39,18 @@ function App() {
          <Route path='/Stores' element={<Stores/>}/>
          <Route path='/Women_Arrival' element={<Women_Arrival/>}/>
          <Route path='/Men_Arrival' element={<Men_Arrival/>}/>
-          <Route path='/Susbainlity' element={<Susbainlity/>}/>
+        <Route path='/Susbainlity' element={<Susbainlity/>}/>
+         <Route path='/Menshoes' element={<Menshoes/>}/>
+         <Route path='/Privacy' element={<Privacy/>}/>
+        <Route path='/Treams' element={<Treams/>}/>
+
+      
+      
+      
+        
       </Routes>
     <Footer/>
+ 
 
     </Router>
     

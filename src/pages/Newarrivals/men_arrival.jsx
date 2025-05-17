@@ -1,6 +1,7 @@
 import React from 'react'
 import './men_arrival.css'
 function men_arrival() {
+
   return (
     <>
     <div className="men-header">
@@ -11,13 +12,11 @@ function men_arrival() {
       that is.)</p>
 </div>
     </div>
-      <div className="men-main1">
-        <h1 >Shoes</h1>
-        <P>Classic sneakers. Sporty running shoes. Comfy loafers. We got the wear-all day <br />
-         (with everything) shoes you and your closet need.</P>
+      <div className="men_arrival-main1">
+        
+        <p>Classic sneakers. Sporty running shoes. Comfy loafers. We got the wear-all day <br />
+         (with everything) shoes you and your closet need.</p>
       </div>
     </>
-  )
-}
-
+  )}
 export default men_arrival

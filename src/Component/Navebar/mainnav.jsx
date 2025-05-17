@@ -31,8 +31,7 @@ const NavMain = () => {
 
       <div className="nav-right">
         <ul className="nav-links right">
-          <li><Link to="/Susbainlity
-          ">Sustainability</Link></li>
+          <li><Link to="/Susbainlity">Sustainability</Link></li>
           <li><Link to="/Rerun">ReRun</Link></li>
           <li><Link to ="/Stores">Stores</Link></li>
         </ul>
@@ -47,23 +46,23 @@ const NavMain = () => {
       {/* MOBILE MENU */}
       <ul className={`nav-links mobile ${menuOpen ? 'active' : ''}`}>
         <li>
-          <a href="#">Men</a>
+          <Link to ="/Men">Men</Link>
           <span className="arrow"><FaChevronRight size={14} /></span>
         </li>
         <li>
-          <a href="#">Women</a>
+       <Link to="/Women">Women</Link>
           <span className="arrow"><FaChevronRight size={14} /></span>
         </li>
-        <li><a href="#">Socks</a></li>
-        <li><a href="#">New Arrivals</a></li>
+        <li><Link to="/Socks">Socks</Link></li>
+        <li><Link to="/Arrival">New Arrivals</Link></li>
         <li>
-          <a href="#">Sustainability</a>
+         <Link to="/Susbainlity">Sustainability</Link>
           <span className="arrow"><FaChevronRight size={14} /></span>
         </li>
-        <li><a href="#">ReRun</a></li>
-        <li><a href="#">Stores</a></li>
-        <li><a href="#">Account</a></li>
-        <li><a href="#">Help</a></li>
+        <li><Link to="/Rerun">ReRun</Link></li>
+        <li><Link to="/Stores">Stores</Link></li>
+        <li><Link to="/Acount">Account</Link></li>
+        <li><Link to="/Help">Help</Link></li>
       </ul>
     </nav>
    
