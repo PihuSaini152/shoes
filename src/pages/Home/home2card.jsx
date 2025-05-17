@@ -1,5 +1,6 @@
 import React from 'react'
 import './home2card.css'
+import homemain from '/home/homecard2.jpg'
 
 import homeshoes1 from '/home/homeshoes (1).jpg'
 import homeshoes2 from '/home/homeshoes (2).jpg'
@@ -44,6 +45,7 @@ function home2card() {
       <div className="homecardmain">
         <div className="homecard0">
             <div className="hcard1">
+              <img src={homemain} alt="" />
             <div className="hcardtext">
                 <h1>Rock And Stroll In Comfort</h1>
                 <h3 style={{marginTop:"10px"}}>Effortlessly comfy styles take color cues from the Southwest’s rustic rock <br /> formations.</h3>
@@ -59,7 +61,7 @@ function home2card() {
  <div className="shoe-list">
       {shoesData.map(shoe => (
         <div key={shoe.id} className="shoe-card">
-          <img src={shoe.img} alt={shoe.name} height={200} className='shoesimg' />
+          <img src={shoe.img} alt={shoe.name} className='shoesimg' />
           <div className="shoestext">
             <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",width:"100%"}}>
                 <h3>{shoe.name}</h3>

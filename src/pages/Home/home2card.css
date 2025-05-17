@@ -17,21 +17,28 @@ flex-wrap: wrap;
     height: 600px;
     width: 47%;
     /* border: 1px solid blue; */
-    background: url(/home/homecard2.jpg);
+    /* background-image: url(/home/homecard2.jpg); */
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
-    transition: 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    background-color: red;
 }
 .hcard1:hover{
- transform: rotateY('20px');
+  transform: scale(1.02);
+ 
+}
+.hcard1 img{
+  height: 100%;
+  width: 100%;
 }
 .hcardtext{
 color: white;
 position: absolute;
 bottom: 80px;
-left: 30px;
+/* left: 30px; */
+right: 0;
 right: 0;
 margin-left: auto;
 margin-left: auto;
@@ -50,32 +57,43 @@ color: white;
     height: 600px;
     width: 47%;
     /* border: 1px solid blue; */
-    transition: 0.3s ease-in-out;
+    /* transition: 0.3s ease-in-out; */
 }
 .shoe-list {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: px;
+  padding: 20px;*/
+  background-color: #f4f4f9; 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 600px;
   gap: 5px;
-  padding: 20px;
-  background-color: #f4f4f9;
 }
 
 .shoe-card {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   overflow: hidden;
   transition: transform 0.3s ease;
   position: relative;
-  height: 270px;
+  height: 280px;
+  /* background-color: red; */
+  width: 270px;
 }
 .shoesimg{
     position: absolute;
+    height: 220px;
+    width: 300px;
 }
 .shoestext{
     position: absolute;
     bottom: 0px;
 }
 .shoe-card:hover {
-  transform: translateY(10px);
+  /* transform: translateY(10px); */
+  transform: scale(1.04);
+
 }
 
 .shoe-card img {
@@ -101,4 +119,17 @@ color: white;
   font-size: 1rem;
   font-weight: bold;
   /* color: #007bff; */
+}
+
+@media (max-width:1163px) {
+  .hcard1{
+    width: 700px 
+  }
+  .hcard2{
+    width: 700px;
+  }
+  .homecard0{
+    height: auto;
+    gap: 30px;
+  }
 }
