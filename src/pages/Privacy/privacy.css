@@ -1,0 +1,23 @@
+.privacymain{
+    height: auto;
+    width: 100%;
+}
+.privacy1st{
+    height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.privacy1st h3{
+    color: rgb(119, 119, 119);
+    margin-top: 25px;
+    font-family: garamond;
+    
+}
+.privacy1st h4{
+    font-family: garamond;
+    color: rgb(119, 119, 119);
+
+    
+}

@@ -1,0 +1,38 @@
+.terms{
+    height: auto;
+    width: 100%;
+}
+.terms1st{
+    height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.terms1st h3{
+    color: rgb(102, 102, 102);
+    margin-top: 25px;
+    font-family: garamond;
+    
+}
+.terms1st h4{
+    font-family: garamond;
+    color: rgb(119, 119, 119);
+
+    
+}
+.terms a{
+    border-bottom: 1px solid;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+.tablecontent{
+     height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
