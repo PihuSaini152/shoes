@@ -9,7 +9,7 @@ import Homecard2 from './home2card.jsx'
 import Homecard3 from './home3card.jsx'
 import Slideshoes from './slideshoes.jsx'
 import Emailhome from './emailhome.jsx'
-
+ 
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
