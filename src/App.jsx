@@ -14,6 +14,7 @@ import Stores from './pages/Stores/store.jsx'
 import Women_Arrival from './pages/Newarrivals/women_arrival.jsx'
 import Men_Arrival from './pages/Newarrivals/men_arrival.jsx'
 import Susbainlity from './pages/Sustainability/sustainability.jsx'
+import Watch from './pages/Watch_now/watch.jsx'
 import Privacy from './pages/Privacy/privacy.jsx'
 import Treams from './pages/Treams/tream.jsx'
 import Menshoes from './pages/MenShoes/MenShoesMain.jsx'
@@ -41,6 +42,7 @@ function App() {
          <Route path='/Men_Arrival' element={<Men_Arrival/>}/>
         <Route path='/Susbainlity' element={<Susbainlity/>}/>
          <Route path='/Menshoes' element={<Menshoes/>}/>
+           <Route path='/Watch' element={<Watch/>}/>
          <Route path='/Privacy' element={<Privacy/>}/>
         <Route path='/Treams' element={<Treams/>}/>
 
