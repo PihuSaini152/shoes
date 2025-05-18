@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './MenShoesMain.css'
 import { Link } from 'react-router-dom';
-import ShoesMen from './pages/MenShoes/ShoesMen.jsx'
+import ShoesMen from './ShoesMen.jsx'
 
 
 function menShoes() {
@@ -25,7 +25,6 @@ function menShoes() {
                     {selected === "MEN" && (
                        <div>
                             <ShoesMen />
-                        
                        </div>
                     )}
                 </div>

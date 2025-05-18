@@ -3,13 +3,55 @@
     width: 22%;
     border: 2px solid;
     font-family: Arial;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.shoesmen-type {
+    height: auto;
+    font-family: Arial;
 }
 
 .shoesmen-filterby {
-    margin-top: 20px;
+    margin-top: 15px;
     height: auto;
-    border-bottom: 2px gray;
     font-family: Arial;
+    border-bottom: 1px solid gray;
+    padding: 20px 0px;
+    /* padding-top: 10px; */
+
+}
+
+.shoesmen-size {
+    height: auto;
+    margin-top: 15px;
+    border-bottom: 1px solid gray;
+    font-family: Arial;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.shoesmen-BESTFOR {
+    height: auto;
+    margin-top: 15px;
+    border-bottom: 1px solid gray;
+    font-family: Arial;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.shoesmen-Material {
+    height: auto;
+    margin-top: 15px;
+    border-bottom: 1px solid gray;
+    font-family: Arial;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.shoesmen-color {
+    height: auto;
+    margin-top: 15px;
+    font-family: Arial;
+    padding-top: 10px;
+
 }
