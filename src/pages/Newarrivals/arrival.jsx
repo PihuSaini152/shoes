@@ -8,7 +8,8 @@ function arrival() {
   return (
     <>
       <div className="arrival-header">
-
+<h1>hello</h1>
+<h2>hemant</h2>
       </div>
       <div className="arrival-main">
         <Link to={'/men_arrival'}>
