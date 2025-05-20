@@ -1,9 +1,11 @@
 .shoesmen-sidebar {
     height: auto;
-    width: 22%;
+    width: 100%;
     border: 2px solid;
     font-family: Arial;
     padding-top: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .shoesmen-type {
@@ -17,7 +19,7 @@
     font-family: Arial;
     border-bottom: 1px solid gray;
     padding: 20px 0px;
-    /* padding-top: 10px; */
+    padding-top: 10px;
 
 }
 

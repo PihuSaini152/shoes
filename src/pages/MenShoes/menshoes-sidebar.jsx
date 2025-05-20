@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './ShoesMen.css'
+import './menshoes-sidebar.css'
 import { IoMdCloseCircleOutline } from "react-icons/io";
 
 
@@ -13,15 +13,15 @@ const bestForOptions = ["Everyday", "Warm Weather", "Active", "Cool Weather", "W
 const materialsOption = ["Tree Fiber Blend", "Canvas", "Wool", "Organic Cotton", "Sugarcane Blend"];
 
 const colorOption = [
-    { name: "Blue", hex: "#3B82F6" },
-    { name: "White", hex: "#FFFFFF" },
-    { name: "Orange", hex: "#F97316" },
-    { name: "Green", hex: "#22C55E" },
-    { name: "Black", hex: "#000000" },
-    { name: "Beige", hex: "#F5F5DC" },
-    { name: "Grey", hex: "#9CA3AF" },
-    { name: "Brown", hex: "#A52A2A" },
-    { name: "Red", hex: "#EF4444" }
+    "Blue",
+    "White",
+    "Orange",
+    "Green",
+    "Black",
+    "Beige",
+    "Grey",
+    "Brown",
+    "Red",
 ];
 
 function shoesmen() {
@@ -154,11 +154,12 @@ function shoesmen() {
                     ))}
                 </div>
 
-                  <div className="shoesmen-color">
+                <div className="shoesmen-color">
                     <h3>HUE</h3>
                     {colorOption.map(color => (
-                        <div key={color.name} style={{ marginTop: "15px", cursor: "pointer", marginLeft: "8px", display: "flex", gap: "8px", alignItems: "center" }}>
+                        <div key={color} style={{ marginTop: "15px", cursor: "pointer", marginLeft: "8px", display: "flex", gap: "8px", alignItems: "center" }}>
                             <input type="checkbox"
+                                value={color}
                                 checked={filters.some(f => f.label === color)}
                                 onChange={() => toggleColor(color)}
                                 style={{
