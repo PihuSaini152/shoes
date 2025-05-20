@@ -12,7 +12,7 @@ function home3card() {
                 <h3>Cards On The Table</h3>
                 </div>
                 <div className='hm3rdbutton'>
-                <button><Link to="watch">WATCH NOW</Link></button>
+                <button><Link to="/watch">WATCH NOW</Link></button>
                 </div>
             </div>
             <div className="homein2" style={{textAlign:"center"}}>
