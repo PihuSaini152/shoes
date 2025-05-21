@@ -1,4 +1,4 @@
-.menshoes-main {
+.menshoesmain-main {
     height: auto;
     width: 100%;
     border: 2px solid;
@@ -8,7 +8,7 @@
     font-family: Arial;
 }
 
-.menshoes-topnav {
+.menshoesmain-topnav {
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -16,17 +16,19 @@
     border: 2px solid;
 }
 
-.menshoes-topnav-left {
+.menshoesmain-topnav-left {
     display: inline-flex;
     gap: 5px;
 }
-.menshoes-topnav-right{
+
+.menshoesmain-topnav-right {
     display: inline-flex;
     border: 2px solid;
     border-radius: 20px;
     overflow: hidden;
 }
-.menshoes-topnav-right button{
+
+.menshoesmain-topnav-right button {
     padding: 5px 15px;
     background: white;
     border: none;
@@ -35,7 +37,26 @@
     font-weight: bold;
     transition: background 0.3s, color 0.3s;
 }
-.menshoes-topnav-right button.active{
+
+.menshoesmain-topnav-right button.active {
     background: black;
     color: white;
+}
+
+.menshoesmain-main2 {
+    width: 100%;
+    height: auto;
+    border: 2px solid;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.menshoesmain-sidebar{
+    height: auto;
+    width: 25%;
+}
+.menshoesmain-content{
+    height: auto;
+    width: 75%;
 }
