@@ -1,31 +1,34 @@
-import React, { useState } from 'react'
-import './menshoes-sidebar.css'
+import React, {useState} from 'react'
+import './WomenShoes-Sidebar.css/'
 import { IoMdCloseCircleOutline } from "react-icons/io";
 
 
 const allSizes = [
-    "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "12.5", "13", "13.5",
-    "14", "W5/M3", "W6/M4", "W7/M5", "W8/M6", "W9/M7", "W10/M8", "W11/M9", "W11/M10",
-    "W11/M11", "W11/M12", "W11/M13", "W11/M14"
+    "5", "5.5", "6.5", "6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11",
+    "11.5", "12", "12.5", "13", "13.5", "14", "W5/M3", "W6/M4", "W7/M5", "W8/M6", "W9/M7",
+    "W10/M8", "W11/M9", "W11/M10", "W11/M11", "W11/M12", "W11/M13", "W11/M14"
 ];
 
 const bestForOptions = ["Everyday", "Warm Weather", "Active", "Cool Weather", "Wet Weather"];
 
-const materialsOption = ["Tree Fiber Blend", "Canvas", "Wool", "Organic Cotton", "Sugarcane Blend"];
+const materialsOption = ["Tree Fiber Blend", "Canvas", "Organic Cotton", "Wool", "Corduroy",
+    "Fluff Collection", "Cozy Collection", "Sugarcane Blend"];
 
 const colorOption = [
-    "Blue",
+    "Beige",
     "White",
     "Orange",
     "Green",
-    "Black",
-    "Beige",
-    "Grey",
+    "Blue",
     "Brown",
     "Red",
+    "Black",
+    "Grey",
+    "Purple"
 ];
 
-function shoesmen() {
+
+function WomenShoesSidebar() {
     const [filters, setFilters] = useState([]);
 
     const removeFilter = (label) => {
@@ -72,13 +75,15 @@ function shoesmen() {
         }
     };
 
+
     return (
         <>
-            <div className="shoesmen-sidebar">
-                <div className="shoesmen-type">
-                    <h1>Men's Shoes</h1>
+            <div className="shoesWomen-sidebar">
+                <div className="shoeswomen-type">
+                    <h1>Women's Shoes</h1>
                     <ul>
                         <li>Sneakers</li>
+                        <li>Flats</li>
                         <li>Slip Ons</li>
                         <li>High Tops</li>
                         <li>Sandals</li>
@@ -89,9 +94,9 @@ function shoesmen() {
                     </ul>
                 </div>
 
-                <div className="shoesmen-filterby">
+                <div className="shoeswomen-filterby">
                     <h2>Filter By:</h2>
-                    <div className="shoesmen-filters" style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginTop: "10px" }}>
+                    <div className="shoeswomen-filters" style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginTop: "10px" }}>
                         {filters.map((filter) => (
                             <div key={filter.label} style={{ color: "black", borderRadius: "40px", padding: "2px", display: "flex", border: "2px solid black" }}>
                                 <p>{filter.label}</p>
@@ -104,7 +109,7 @@ function shoesmen() {
                     </div>
                 </div>
 
-                <div className="shoesmen-size">
+                <div className="shoeswomen-size">
                     <h3>SIZES</h3>
                     <p style={{ fontSize: "15px", marginTop: "10px" }}>Most of our shoes only come in full sizes. If you’re a half size, select your nearest whole size too.</p>
 
@@ -123,7 +128,7 @@ function shoesmen() {
 
                 </div>
 
-                <div className="shoesmen-BESTFOR">
+                <div className="shoeswomen-BESTFOR">
                     <h3>BEST FOR</h3>
                     {bestForOptions.map(occation => (
                         <div key={occation} style={{ marginTop: "15px", cursor: "pointer", marginLeft: "8px", display: "flex", gap: "8px", alignItems: "center" }}>
@@ -139,7 +144,7 @@ function shoesmen() {
                     ))}
                 </div>
 
-                <div className="shoesmen-Material">
+                <div className="shoeswomen-Material">
                     <h3>MATERIALS</h3>
                     {materialsOption.map(material => (
                         <div key={material} style={{ marginTop: "15px", cursor: "pointer", marginLeft: "8px", display: "flex", gap: "8px", alignItems: "center" }}>
@@ -155,7 +160,7 @@ function shoesmen() {
                     ))}
                 </div>
 
-                <div className="shoesmen-color">
+                <div className="shoeswomen-color">
                     <h3>HUE</h3>
                     {colorOption.map(color => (
                         <div key={color} style={{ marginTop: "15px", cursor: "pointer", marginLeft: "8px", display: "flex", gap: "8px", alignItems: "center" }}>
@@ -173,9 +178,8 @@ function shoesmen() {
                 </div>
 
             </div>
-
         </>
     )
 }
 
-export default shoesmen
+export default WomenShoesSidebar
