@@ -1,0 +1,90 @@
+.men-shoes-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.shoe-deta {
+  width: 280px;
+  height: 300px;
+  background: #fff;
+  /* Removed border-radius */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem 0;
+}
+
+.shoe-deta:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.shoes-image {
+  width: 250px;
+  height: 270px; /* Increased height */
+  background: #f9f9f9;
+  /* Removed border-radius */
+  overflow: hidden;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shoes-image img {
+  width: 230px;
+  height: 270px; /* Match container height */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.shoe-deta:hover .shoes-image img {
+  transform: scale(1.05);
+}
+
+.men-shoes-text{
+    width: 85%;
+}
+
+.men-shoes-text h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0 0 0.5rem 0;
+}
+
+.men-shoes-text h4 {
+    text-align: left;
+  font-size: 1rem;
+  color: #ff4500;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .men-shoes-card {
+    justify-content: center;
+  }
+
+  .shoe-deta {
+    width: 230px;
+    height: auto;
+  }
+
+  .shoes-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .shoes-image img {
+    width: 100%;
+    height: auto;
+  }
+}
