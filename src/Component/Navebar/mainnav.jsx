@@ -26,7 +26,7 @@ const NavMain = () => {
       </div>
 
       <div className="nav-logo">
-        <Link to="/Home">Allbirds</Link>
+        <Link to="/">Allbirds</Link>
       </div>
 
       <div className="nav-right">
