@@ -1,0 +1,27 @@
+.womenshoesmain-main{
+    height: auto;
+    width: 100%;
+    border: 2px solid;
+    /* padding-top: 20px; */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.womenshoesmain-sidebar {
+    height: auto;
+    width: 23%;
+    border: 2px solid;
+
+}
+
+.womenshoesmain-content {
+    height: auto;
+    width: 75%;
+    border: 2px solid;
+
+}

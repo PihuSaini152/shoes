@@ -52,11 +52,8 @@
     justify-content: center;
     align-items: center;
 }
-.menshoesmain-sidebar{
+
+.menshoesmain-content {
     height: auto;
-    width: 25%;
-}
-.menshoesmain-content{
-    height: auto;
-    width: 75%;
+    width: 100%;
 }

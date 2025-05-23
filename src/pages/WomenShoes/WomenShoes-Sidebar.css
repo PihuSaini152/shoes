@@ -1,0 +1,58 @@
+.shoeswomen-sidebar {
+    height: auto;
+    width: 23%;
+    font-family: Arial;
+    padding-top: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 2px solid;
+}
+
+.shoeswomen-type {
+    height: auto;
+    font-family: Arial;
+}
+
+.shoeswomen-filterby {
+    margin-top: 15px;
+    height: auto;
+    font-family: Arial;
+    border-bottom: 1px solid gray;
+    padding: 20px 0px;
+    padding-top: 10px;
+}
+
+.shoeswomen-size {
+    height: auto;
+    margin-top: 15px;
+    border-bottom: 1px solid gray;
+    font-family: Arial;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.shoeswomen-BESTFOR {
+    height: auto;
+    margin-top: 15px;
+    border-bottom: 1px solid gray;
+    font-family: Arial;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.shoeswomen-Material {
+    height: auto;
+    margin-top: 15px;
+    border-bottom: 1px solid gray;
+    font-family: Arial;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.shoeswomen-color {
+    height: auto;
+    margin-top: 15px;
+    font-family: Arial;
+    padding-top: 10px;
+
+}
