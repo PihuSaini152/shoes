@@ -3,11 +3,11 @@
   flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
-  padding: 1rem;
+  padding: 1rem 0rem;
 }
 
 .shoe-deta {
-  width: 300px;
+  width: 270px;
   height: auto;
   background: #fff;
   /* Removed border-radius */
@@ -18,7 +18,7 @@
   flex-direction: column;
   align-items: center;
   cursor: pointer;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
 }
 
 .shoe-deta:hover {
@@ -136,6 +136,99 @@
     display: block;
     /* height: auto; */
 }
+.bgcard {
+  width: 270px;
+  height: 396px;
+  background-image: url('/Men-Shoes/Sneakers/menshoes3.avif'); /* red flower background */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 13px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 0; /* No border radius */
+  position: relative;
+}
+
+/* Shoe image floating above text */
+
+
+/* Title */
+.bgcard-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  z-index: 2;
+  margin-top: 130px;
+  font-family: cursive;
+}
+
+/* Subtext */
+.bgcard-subtitle {
+  font-size: 19px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  max-width: 260px;
+  z-index: 2;
+}
+
+/* Button container */
+.bgcard-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* Buttons */
+.bgcard-btn {
+  padding: 10px 16px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.85rem;
+  border-radius: 0; /* no border radius */
+  transition: transform 0.3s ease-in-out;
+}
+
+.bgcard-btn:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+}
+
+.bgcard1 {
+  width: 270px;
+  height: 396px;
+  background-image: url('/Men-Shoes/Sneakers/menshoes12.avif'); /* red flower background */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 13px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 0; /* No border radius */
+  position: relative;
+}
+.bgcard-title1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  z-index: 2;
+  margin-top: 180px;
+  /* font-family: cursive; */
+}
+
 
 @media (max-width: 600px) {
   .men-shoes-card {

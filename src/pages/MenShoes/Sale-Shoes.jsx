@@ -1,13 +1,10 @@
 import React from 'react'
-import './Sneakers.css'
-
-function Sneakers() {
-   const labels = ["NEW", "BESTSELLER", "EASY ON/OFF", "30% OFF"];
-
-const shoes = [
+import './Sale-Shoes.css'
+function SaleShoes() {
+    const shoes = [
   { id: 1, image: "/Men-Shoes/Sneakers/menshoes1.avif", price: 72.45, name: "Men's Tree Runner", selling: "EASY ON/OFF" },
   { id: 2, image: "/Men-Shoes/Sneakers/menshoes2.avif", price: 88.23, name: "Men's Trail Blazer", selling: "30% OFF" },
-  // { id: 3, image: "/Men-Shoes/Sneakers/menshoes3.avif", price: 54.78, name: "Men's Forest Trekker", selling: "BESTSELLER" },
+  { id: 3, image: "/Men-Shoes/Sneakers/menshoes3.avif", price: 54.78, name: "Men's Forest Trekker", selling: "BESTSELLER" },
   { id: 4, image: "/Men-Shoes/Sneakers/menshoes4.avif", price: 97.12, name: "Men's Mountain Runner", selling: "NEW" },
   { id: 5, image: "/Men-Shoes/Sneakers/menshoes5.avif", price: 66.34, name: "Men's Canyon Stride", selling: "30% OFF" },
   { id: 6, image: "/Men-Shoes/Sneakers/menshoes6.avif", price: 85.59, name: "Men's Urban Runner", selling: "BESTSELLER" },
@@ -32,13 +29,11 @@ const shoes = [
   { id: 25, image: "/Men-Shoes/Sneakers/menshoes25.avif", price: 74.83, name: "Men's Coastal Runner", selling: "30% OFF" },
 ];
 
-
   return (
-   <>
-    <div className='men-shoes-main'>
+   <div className='men-shoes-main'>
       <div className="men-shoes-card">
         {
-            shoes.slice(0,2).map((shu)=>(
+            shoes.slice(6,22).map((shu)=>(
                 <div key={shu.id} className="shoe-deta">
                     <div className="shoes-image">
                         <img src={shu.image} alt="" />
@@ -81,120 +76,9 @@ const shoes = [
                 
             ))
         }
-         <div className="bgcard">
-  <h2 className="bgcard-title">Up To 40% Off Select <br /> Styles</h2>
-  <p className="bgcard-subtitle">
-    Our comfiest sneakers are on major sale—for a limited time only.
-  </p>
-  <div className="bgcard-buttons">
-    <button className="bgcard-btn">MEN'S SALE</button>
-    <button className="bgcard-btn">WOMEN'S SALE</button>
-  </div>
-</div>
-{
-            shoes.slice(3,11).map((shu)=>(
-                <div key={shu.id} className="shoe-deta">
-                    <div className="shoes-image">
-                        <img src={shu.image} alt="" />
-                        <h3>{shu.selling}</h3>
-                    </div>
-                    <div className='men-shoes-text'>
-                        <h3>{shu.name}</h3>
-                        <h4>${shu.price}</h4>
-                    </div>
-                    <div className="shoes-slid-image">
-                        {
-                            shoes.slice(3,8).map((ss)=>(
-                                <div key={ss.id} className="slice-imege">
-                                    <img  src={ss.image} alt=""/>
-                                </div>
-                            ))
-                        }
-                      
-                    </div>
-                     <div className="shoes-add">
-            <p>Quick Add</p>
-            <div className="shoes-sizes">
-              <button>8</button>
-              <button>8.5</button>
-              <button>9</button>
-              <button>9.5</button>
-              <button>10</button>
-              <button>10.5</button>
-              <button>11</button>
-              <button>11.5</button>
-              <button>12</button>
-              <button>12.5</button>
-              <button>13</button>
-              <button>13.5</button>
-              <button>14</button>
-              
-            </div>
-          </div>
-                </div>
-                
-            ))
-        }
-
-         <div className="bgcard1">
-  <h2 className="bgcard-title1">Start With Fresh Canvas</h2>
-  <p className="bgcard-subtitle">
-   Sophisticated sneakers, endless possibilities.
-  </p>
-  <div className="bgcard-buttons">
-    <button className="bgcard-btn">MEN'S SALE</button>
-    <button className="bgcard-btn">WOMEN'S SALE</button>
-  </div>
-</div>
-
-{
-            shoes.slice(12).map((shu)=>(
-                <div key={shu.id} className="shoe-deta">
-                    <div className="shoes-image">
-                        <img src={shu.image} alt="" />
-                        <h3>{shu.selling}</h3>
-                    </div>
-                    <div className='men-shoes-text'>
-                        <h3>{shu.name}</h3>
-                        <h4>${shu.price}</h4>
-                    </div>
-                    <div className="shoes-slid-image">
-                        {
-                            shoes.slice(3,8).map((ss)=>(
-                                <div key={ss.id} className="slice-imege">
-                                    <img  src={ss.image} alt=""/>
-                                </div>
-                            ))
-                        }
-                      
-                    </div>
-                     <div className="shoes-add">
-            <p>Quick Add</p>
-            <div className="shoes-sizes">
-              <button>8</button>
-              <button>8.5</button>
-              <button>9</button>
-              <button>9.5</button>
-              <button>10</button>
-              <button>10.5</button>
-              <button>11</button>
-              <button>11.5</button>
-              <button>12</button>
-              <button>12.5</button>
-              <button>13</button>
-              <button>13.5</button>
-              <button>14</button>
-              
-            </div>
-          </div>
-                </div>
-                
-            ))
-        }
-      </div>
     </div>
-   </>
+    </div>
   )
 }
 
-export default Sneakers
+export default SaleShoes

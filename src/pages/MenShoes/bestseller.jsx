@@ -1,7 +1,7 @@
 import React from 'react'
-import './Sneakers.css'
+import './bestseller.css'
 
-function Sneakers() {
+function bestsellers() {
    const labels = ["NEW", "BESTSELLER", "EASY ON/OFF", "30% OFF"];
 
 const shoes = [
@@ -38,7 +38,7 @@ const shoes = [
     <div className='men-shoes-main'>
       <div className="men-shoes-card">
         {
-            shoes.slice(0,2).map((shu)=>(
+            shoes.slice(5,7).map((shu)=>(
                 <div key={shu.id} className="shoe-deta">
                     <div className="shoes-image">
                         <img src={shu.image} alt="" />
@@ -81,18 +81,11 @@ const shoes = [
                 
             ))
         }
-         <div className="bgcard">
-  <h2 className="bgcard-title">Up To 40% Off Select <br /> Styles</h2>
-  <p className="bgcard-subtitle">
-    Our comfiest sneakers are on major sale—for a limited time only.
-  </p>
-  <div className="bgcard-buttons">
-    <button className="bgcard-btn">MEN'S SALE</button>
-    <button className="bgcard-btn">WOMEN'S SALE</button>
-  </div>
+         <div className="best-bgcard">
+  
 </div>
 {
-            shoes.slice(3,11).map((shu)=>(
+            shoes.slice(8,13).map((shu)=>(
                 <div key={shu.id} className="shoe-deta">
                     <div className="shoes-image">
                         <img src={shu.image} alt="" />
@@ -136,19 +129,60 @@ const shoes = [
             ))
         }
 
-         <div className="bgcard1">
-  <h2 className="bgcard-title1">Start With Fresh Canvas</h2>
-  <p className="bgcard-subtitle">
-   Sophisticated sneakers, endless possibilities.
-  </p>
-  <div className="bgcard-buttons">
-    <button className="bgcard-btn">MEN'S SALE</button>
-    <button className="bgcard-btn">WOMEN'S SALE</button>
-  </div>
+         <div className="best-bgcard-1">
+ 
 </div>
 
 {
-            shoes.slice(12).map((shu)=>(
+            shoes.slice(15,20).map((shu)=>(
+                <div key={shu.id} className="shoe-deta">
+                    <div className="shoes-image">
+                        <img src={shu.image} alt="" />
+                        <h3>{shu.selling}</h3>
+                    </div>
+                    <div className='men-shoes-text'>
+                        <h3>{shu.name}</h3>
+                        <h4>${shu.price}</h4>
+                    </div>
+                    <div className="shoes-slid-image">
+                        {
+                            shoes.slice(3,8).map((ss)=>(
+                                <div key={ss.id} className="slice-imege">
+                                    <img  src={ss.image} alt=""/>
+                                </div>
+                            ))
+                        }
+                      
+                    </div>
+                     <div className="shoes-add">
+            <p>Quick Add</p>
+            <div className="shoes-sizes">
+              <button>8</button>
+              <button>8.5</button>
+              <button>9</button>
+              <button>9.5</button>
+              <button>10</button>
+              <button>10.5</button>
+              <button>11</button>
+              <button>11.5</button>
+              <button>12</button>
+              <button>12.5</button>
+              <button>13</button>
+              <button>13.5</button>
+              <button>14</button>
+              
+            </div>
+          </div>
+                </div>
+                
+            ))
+        }
+
+          <div className="best-bgcard-2">
+ 
+</div>
+{
+            shoes.slice(6,7).map((shu)=>(
                 <div key={shu.id} className="shoe-deta">
                     <div className="shoes-image">
                         <img src={shu.image} alt="" />
@@ -197,4 +231,4 @@ const shoes = [
   )
 }
 
-export default Sneakers
+export default bestsellers

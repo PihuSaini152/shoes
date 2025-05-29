@@ -15,18 +15,28 @@ flex-wrap: wrap;
 }
 .hcard1{
     height: 600px;
-    width: 47%;
-    /* border: 1px solid blue; */
-    /* background-image: url(/home/homecard2.jpg); */
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+    background-color: red;
+}
+.hcard1::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+   background-image: url(/home/homecard2.jpg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    position: relative;
-    transition: transform 0.3s ease-in-out;
-    background-color: red;
+    transition: transform 0.4s ease-in-out;
+    transform: scale(1.6);
+    z-index: 0;
+    height: 100%;
+    width: 100%;
 }
-.hcard1:hover{
-  transform: scale(1.02);
+.hcard1:hover::before{
+  transform: scale(1.8);
  
 }
 .hcard1 img{
