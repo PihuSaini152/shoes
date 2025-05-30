@@ -1,72 +1,71 @@
-// src/components/ProductList.js
-import React, { useEffect, useState } from "react";
-// import homecard from "./ProductCard";
-import './homecard1.css';
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./homecard1.css"; // आपका CSS फाइल
 
-import homecard1 from '/public/home/homecard1.jpg'
-import homecard2 from '/public/home/homecard4.jpg'
-import homecard3 from '/public/home/homecard3.jpg'
-
-
-const homeimg = [
-  {
-    id: 1,
-    name: "Bestsellers",
-    category: "Fan-Favorite Sneakers, Flats, and Slip-Ons",
-    price: 5814,
-    tag: "Exclusive",
-    images:homecard1
-  },
-  {
-    id: 2,
-    name: "New Arrivals",
-    category: "The Latest Styles & Limited-Edition Colors",
-    price: 4137,
-    tag: "New",
-    images: homecard2
-  },
-  {
-    id: 3,
-    name: "Spring Essentials",
-    category: "Breezy Shoes For Warmer Days Ahead",
-    price: 3682,
-    tag: "Best Seller",
-    images: homecard3
-  }
-];
-
-
-const homecard = () => {
- 
-
- 
+const HomeCards = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+    
+  };
 
   return (
     <div className="homaecard">
-     
-      {homeimg.length > 0 ? (
-        homeimg.map((res) => (
-          <div key={res.id} className="homecardbox">
-               <img src={res.images}   className="homecard-image" />
-          
-           <div className="homecardtext">
-             <h1>{res.name}</h1>
-            <h3> {res.category}</h3>
-            {/* <p>Price: ₹{res.price}</p> */}
-            {/* <p className="homecardtag">{res.tag}</p> */}
-              
-           </div>
-           <div className="homecardbut">
-            <button className="hover-button">SHOP MEN</button>
-            <button className="hover-button">SHON WOMEN</button>
-           </div>
+      <Slider {...settings}>
+        <div className="homecardbox1">
+          <div className="homecardtext">
+            <h1>Spring Essentials</h1>
+            <h3>Breezy Shoes For Warmer Days Ahead</h3>
           </div>
-        ))
-      ) : (
-        <h2>No products available</h2>
-      )}
+          <div className="homecardbut1">
+            <button className="hover-button">SHOP MEN</button>
+            <button className="hover-button">SHOP WOMEN</button>
+          </div>
+        </div>
+
+        <div className="homecardbox2">
+          <div className="homecardtext">
+            <h1>New Arrivals</h1>
+            <h3>The Latest Styles & Limited-Edition Colors</h3>
+          </div>
+          <div className="homecardbut2">
+            <button className="hover-button">SHOP MEN</button>
+            <button className="hover-button">SHOP WOMEN</button>
+          </div>
+        </div>
+
+        <div className="homecardbox3">
+          <div className="homecardtext">
+            <h1>Bestsellers</h1>
+            <h3>Fan-Favorite Sneakers, Flats, and Slip-Ons</h3>
+          </div>
+          <div className="homecardbut3">
+            <button className="hover-button">SHOP MEN</button>
+            <button className="hover-button">SHOP WOMEN</button>
+          </div>
+        </div>
+      </Slider>
     </div>
   );
 };
 
-export default homecard;
+export default HomeCards;

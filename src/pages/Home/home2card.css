@@ -12,13 +12,18 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-wrap: wrap;
+padding: 0px 20px;
+
 }
 .hcard1{
     height: 600px;
     width: 500px;
     overflow: hidden;
     position: relative;
-    background-color: red;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    
 }
 .hcard1::before{
   content: '';
@@ -30,13 +35,13 @@ flex-wrap: wrap;
     background-size: contain;
     background-repeat: no-repeat;
     transition: transform 0.4s ease-in-out;
-    transform: scale(1.6);
+    transform: scale(1.2);
     z-index: 0;
     height: 100%;
     width: 100%;
 }
 .hcard1:hover::before{
-  transform: scale(1.8);
+  transform: scale(1.4);
  
 }
 .hcard1 img{
@@ -47,9 +52,8 @@ flex-wrap: wrap;
 color: white;
 position: absolute;
 bottom: 80px;
-/* left: 30px; */
 right: 0;
-right: 0;
+left: 20px;
 margin-left: auto;
 margin-left: auto;
 }
@@ -74,7 +78,8 @@ color: white;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: px;
   padding: 20px;*/
-  background-color: #f4f4f9; 
+  /* background-color: #f4f4f9;  */
+  
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -88,7 +93,7 @@ color: white;
   transition: transform 0.3s ease;
   position: relative;
   height: 280px;
-  /* background-color: red; */
+  background-color: black;
   width: 270px;
 }
 .shoesimg{
@@ -142,4 +147,58 @@ color: white;
     height: auto;
     gap: 30px;
   }
+ 
+}
+@media (max-width:500px) {
+  .hcard1{
+ height: 400px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+ .hcard1::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+   background-image: url(/home/homecard2.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.4s ease-in-out;
+    transform: scale(1.8);
+    z-index: 0;
+    height: 400px;
+    width: 100%;
+}
+}
+
+@media (max-width:500px) {
+  .hcard1{
+ height: 350px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+ .hcard1::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+   background-image: url(/home/homecard2.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.4s ease-in-out;
+    transform: scale(1.8);
+    z-index: 0;
+    height: 400px;
+    width: 100%;
+}
 }
