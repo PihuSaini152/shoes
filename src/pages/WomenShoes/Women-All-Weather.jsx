@@ -1,10 +1,8 @@
 import React from 'react'
 import './WomenShoes.css'
-
-function womenshoes() {
-   const labels = ["NEW", "BESTSELLER", "EASY ON/OFF", "30% OFF"];
-
-const shoes = [
+function womenallweather() {
+    const labal = ["WATER-REPELLENT","WATER-REPELLENT"]
+    const shoes = [
   { id: 1, image: "/Women-Shoes/womenshoes1.avif", price: 72.45, name: "Women's Tree Runner", selling: "EASY ON/OFF" },
   { id: 2, image: "/Women-Shoes/womenshoes2.avif", price: 88.23, name: "Women's Trail Blazer", selling: "" },
   { id: 3, image: "/Women-Shoes/womenshoes3.avif", price: 54.78, name: "Women's Forest Trekker", selling: "BESTSELLER" },
@@ -36,18 +34,15 @@ const shoes = [
   { id: 29, image: "/Women-Shoes/womenshoes29.avif", price: 83.10, name: "Women's Daylight Dash", selling: "30% OFF" }
 ]
 
-
-
   return (
-   <>
-    <div className='women-shoes-main'>
-      <div className="women-shoes-card">
-        {
-            shoes.slice(0,2).map((shu)=>(
+    <div className="women-shoes-main">
+        <div className="women-shoes-card">
+             {
+            shoes.slice(17,21).map((shu)=>(
                 <div key={shu.id} className="women-shoe-deta">
                     <div className="women-shoes-image">
                         <img src={shu.image} alt="" />
-                        <h3>{shu.selling}</h3>
+                        <h3>{labal[0]}</h3>
                     </div>
                     <div className='women-shoes-text'>
                         <h3>{shu.name}</h3>
@@ -55,7 +50,7 @@ const shoes = [
                     </div>
                     <div className="women-shoes-slid-image">
                         {
-                            shoes.slice(3,8).map((ss)=>(
+                            shoes.slice(6,11).map((ss)=>(
                                 <div key={ss.id} className="women-slice-imege">
                                     <img  src={ss.image} alt=""/>
                                 </div>
@@ -86,120 +81,11 @@ const shoes = [
                 
             ))
         }
-         <div className="women-bgcard">
-  <h2 className="women-bgcard-title">Start With Fresh Canvas</h2>
-  <p className="women-bgcard-subtitle">Sophisticated sneakers, endless <br /> possibilities.  </p>
-  <div className="women-bgcard-buttons">
-    <button className="women-bgcard-btn">MEN'S SALE</button>
-    <button className="women-bgcard-btn">WOMEN'S SALE</button>
-  </div>
-</div>
- {
-            shoes.slice(2,10).map((shu)=>(
-                <div key={shu.id} className="women-shoe-deta">
-                    <div className="women-shoes-image">
-                        <img src={shu.image} alt="" />
-                        <h3>{shu.selling}</h3>
-                    </div>
-                    <div className='women-shoes-text'>
-                        <h3>{shu.name}</h3>
-                        <h4>${shu.price}</h4>
-                    </div>
-                    <div className="women-shoes-slid-image">
-                        {
-                            shoes.slice(3,8).map((ss)=>(
-                                <div key={ss.id} className="women-slice-imege">
-                                    <img  src={ss.image} alt=""/>
-                                </div>
-                            ))
-                        }
-                      
-                    </div>
-                     <div className="women-shoes-add">
-            <p>Quick Add</p>
-            <div className="women-shoes-sizes">
-              <button>8</button>
-              <button>8.5</button>
-              <button>9</button>
-              <button>9.5</button>
-              <button>10</button>
-              <button>10.5</button>
-              <button>11</button>
-              <button>11.5</button>
-              <button>12</button>
-              <button>12.5</button>
-              <button>13</button>
-              <button>13.5</button>
-              <button>14</button>
-              
-            </div>
-          </div>
-                </div>
-                
-            ))
-        }
-
-         <div className="women-bgcard1">
-  <h2 className="women-bgcard-title">Just Add White</h2>
-  <p className="women-bgcard-subtitle">
-   Summer outfits require comfort and <br /> versatility. AKA: White sneakers.
-  </p>
-  <div className="women-bgcard-buttons">
-    <button className="women-bgcard-btn">MEN'S SALE</button>
-    <button className="women-bgcard-btn">WOMEN'S SALE</button>
-  </div>
-</div>
-
- {
-            shoes.slice(10,29).map((shu)=>(
-                <div key={shu.id} className="women-shoe-deta">
-                    <div className="women-shoes-image">
-                        <img src={shu.image} alt="" />
-                        <h3>{shu.selling}</h3>
-                    </div>
-                    <div className='women-shoes-text'>
-                        <h3>{shu.name}</h3>
-                        <h4>${shu.price}</h4>
-                    </div>
-                    <div className="women-shoes-slid-image">
-                        {
-                            shoes.slice(3,8).map((ss)=>(
-                                <div key={ss.id} className="women-slice-imege">
-                                    <img  src={ss.image} alt=""/>
-                                </div>
-                            ))
-                        }
-                      
-                    </div>
-                     <div className="women-shoes-add">
-            <p>Quick Add</p>
-            <div className="women-shoes-sizes">
-              <button>8</button>
-              <button>8.5</button>
-              <button>9</button>
-              <button>9.5</button>
-              <button>10</button>
-              <button>10.5</button>
-              <button>11</button>
-              <button>11.5</button>
-              <button>12</button>
-              <button>12.5</button>
-              <button>13</button>
-              <button>13.5</button>
-              <button>14</button>
-              
-            </div>
-          </div>
-                </div>
-                
-            ))
-        }
-
-      </div>
+        </div>
     </div>
-   </>
+
+
   )
 }
 
-export default womenshoes
-
+export default womenallweather

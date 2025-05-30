@@ -1,3 +1,19 @@
+.women-seller-bg{
+padding-top: 50px;    
+height: 150px;
+width: 100%;
+background: url('/Women-Shoes/bestsellerbg.avif');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-color: red;
+}
+.women-seller-bg h2,h4{
+text-align: center;
+color: white;
+}
+
+
 .women-shoes-card {
   display: flex;
   flex-wrap: wrap;
@@ -126,10 +142,10 @@
   display: block;
 }
 
-.women-bgcard {
+.women-sellcard {
   width: 270px;
   height: 396px;
-  background-image: url('/Women-Shoes/womenbg2.avif');
+  background-image: url('/Women-Shoes/womenbg3.avif');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -186,10 +202,10 @@
   transform: scale(1.05);
 }
 
-.women-bgcard1 {
+.women-sellcard1 {
   width: 270px;
   height: 396px;
-  background-image: url('/Women-Shoes/womenbg1.avif');
+  background-image: url('/Women-Shoes/womenbg4.avif');
   background-size: cover;
   background-position: center;
   display: flex;

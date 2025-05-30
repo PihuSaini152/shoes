@@ -45,7 +45,7 @@ function home2card() {
       <div className="homecardmain">
         <div className="homecard0">
             <div className="hcard1">
-              <img src={homemain} alt="" />
+              {/* <img src={homemain} alt="" /> */}
             <div className="hcardtext">
                 <h1>Rock And Stroll In Comfort</h1>
                 <h3 style={{marginTop:"10px"}}>Effortlessly comfy styles take color cues from the Southwest’s rustic rock <br /> formations.</h3>

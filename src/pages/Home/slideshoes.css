@@ -1,31 +1,110 @@
-.slideshoes{
-    height: auto;
-    width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.slideshoes {
+  padding: 20px;
+  background: white;
+  height: auto;
+  position: relative;
 }
-.slidecard{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    /* border: 1px solid; */
-    flex-wrap: wrap;
+
+.slide-card {
+  padding: 10px;
+  background: #fff;
+  text-align: left;
 }
-.newslide{
-    /* border: 2px solid; */
-    height: 380px;
-    width: 300px;
+
+.shoe-img {
+  width: 100%;
+  max-width: 310px;
+  height: 250px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
 }
-.newslide img{
-    height: 280px;
-    width: 100%;
-    border: 2px solid;
+
+.shoe-info h3 {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+}
+
+.color {
+  color: #666;
+  font-size: 16px;
+  margin: 0 0 5px 0;
+}
+
+.price {
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  margin: 2px 0 5px 0;
 
 }
-.shoestexthome{
-    border: none;
+
+/* Navigation Buttons */
+.custom-nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 40%;
+  width: 97%;
+  /* padding: 0 10px; */
+  z-index: 1;
 }
-.hclass{
-    color: rgb(65, 64, 64);
-    margin-top: 5px;
+
+.custom-nav-buttons button {
+  padding: 12px;
+  background: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+  border: 1px solid rgb(221, 219, 219);
+}
+
+.custom-nav-buttons button:hover {
+  /* background: #444; */
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .shoe-img {
+    max-width: 240px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shoe-img {
+    max-width: 220px;
+    height: 160px;
+  }
+
+  .custom-nav-buttons button {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slideshoes {
+    padding: 10px;
+  }
+
+  .shoe-img {
+    max-width: 300px;
+    height: 240px;
+  }
+
+  .custom-nav-buttons {
+    top: 35%;
+  }
+
+  .custom-nav-buttons button {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
 }

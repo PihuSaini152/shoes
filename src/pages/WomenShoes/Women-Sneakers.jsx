@@ -1,7 +1,7 @@
 import React from 'react'
 import './WomenShoes.css'
 
-function womenshoes() {
+function womenSneakers() {
    const labels = ["NEW", "BESTSELLER", "EASY ON/OFF", "30% OFF"];
 
 const shoes = [
@@ -151,7 +151,7 @@ const shoes = [
 </div>
 
  {
-            shoes.slice(10,29).map((shu)=>(
+            shoes.slice(18,29).map((shu)=>(
                 <div key={shu.id} className="women-shoe-deta">
                     <div className="women-shoes-image">
                         <img src={shu.image} alt="" />
@@ -201,5 +201,5 @@ const shoes = [
   )
 }
 
-export default womenshoes
+export default womenSneakers
 
