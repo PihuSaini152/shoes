@@ -36,7 +36,7 @@ const NavMain = () => {
           <li><Link to ="/Stores">Stores</Link></li>
         </ul>
         <div className="nav-icons">
-          <FiSearch />
+          <Link to="/Search"><FiSearch /></Link>
           <FaRegUser />
           <Link to="/Help"><MdOutlineHelpOutline /></Link>
           <FaShoppingCart />
