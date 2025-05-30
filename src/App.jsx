@@ -18,6 +18,7 @@ import Watch from './pages/Watch_now/watch.jsx'
 import Privacy from './pages/Privacy/privacy.jsx'
 import Treams from './pages/Treams/tream.jsx'
 import Menshoes from './pages/MenShoes/MenShoesMain.jsx'
+import Search from './pages/Search/search.jsx'
 
 
 
@@ -41,11 +42,12 @@ function App() {
          <Route path='/Stores' element={<Stores/>}/>
          <Route path='/Women_Arrival' element={<Women_Arrival/>}/>
          <Route path='/Men_Arrival' element={<Men_Arrival/>}/>
-        <Route path='/Susbainlity' element={<Susbainlity/>}/>
+         <Route path='/Susbainlity' element={<Susbainlity/>}/>
          <Route path='/Menshoes' element={<Menshoes/>}/>
-           <Route path='/Watch' element={<Watch/>}/>
+         <Route path='/Watch' element={<Watch/>}/>
          <Route path='/Privacy' element={<Privacy/>}/>
         <Route path='/Treams' element={<Treams/>}/>
+         <Route path='/Search' element={<Search/>}/>
 
 
 
