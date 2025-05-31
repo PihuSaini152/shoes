@@ -1,7 +1,12 @@
 import React from 'react'
+
 import '../Newarrivals/men_arrival.css'
+import { Link } from 'react-router-dom'
+// import Women_arrival from './women_arrival'
+
 
 function men_arrival() {
+
    const labels = ["NEW", "BESTSELLER", "EASY ON/OFF", "30% OFF"];
 
 const shoes = [
@@ -24,6 +29,16 @@ const shoes = [
 ];
   return (
     <div>
+              <div className="arrival-header">
+      </div>
+      <div className="arrival-main">
+        <Link to={'/men_arrival'}>
+         <h2>MEN`S ARRIVALS </h2></Link>
+       
+        <Link to = "/women_arrival">
+        <h2>WOMEN`S ARRIVALS</h2></Link>
+        
+      </div>
          <div class="Men-s-New-Arrivals-foter-taxt-content">
         <h1>Shoes</h1>
         <p>Classic sneakers. Sporty running shoes.br <br /> Comfy loafers. We got the wear-all day (with everything) shoes you and your closet need.</p>

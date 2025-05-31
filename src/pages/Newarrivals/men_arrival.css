@@ -269,6 +269,22 @@
     flex-direction: column;
     gap: 10px;
 }
+.arrival-header{
+    max-width: 100%;
+    height: 350px;
+    background-image: url('new-arrival/top-image.avif');
+    background-position: center;
+    background-size: cover;
+    border: 1px solid;
+   
+}
+
+.arrival-main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
 
 @media only screen and (max-width: 1000px) {
     .Allbirds-ReRun {

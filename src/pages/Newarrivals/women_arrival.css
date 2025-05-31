@@ -1,0 +1,387 @@
+.men-shoes-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.shoe-deta {
+    width: 300px;
+    height: auto;
+    background: #fff;
+    /* Removed border-radius */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem 0;
+}
+
+.shoe-deta:hover {
+    transform: translateX(0px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.shoes-image {
+    width: 300px;
+    height: auto;
+    /* Increased height */
+    background: #eceaea;
+    /* Removed border-radius */
+    overflow: hidden;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.shoes-image img {
+    width: 270px;
+    height: 270px;
+    /* Match container height */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.shoes-image h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    background-color: white;
+    padding: 4px 9px;
+}
+
+.shoe-deta:hover .shoes-image img {
+    transform: scale(1.05);
+}
+
+.slice-imege img {
+    height: 40px;
+    background-color: rgb(224, 223, 223);
+    border-radius: 4px;
+}
+
+.slice-imege img:hover {
+    border: 1px solid grey;
+    height: 38px;
+}
+
+.shoes-slid-image {
+    display: flex;
+    /* justify-content: center; */
+    gap: 16px;
+    margin-top: 10px;
+    height: 50px;
+}
+
+.men-shoes-text {
+    width: 85%;
+}
+
+.men-shoes-text h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+    margin: 0 0 0.5rem 0;
+}
+
+.men-shoes-text h4 {
+    text-align: left;
+    font-size: 1rem;
+    color: #ff4500;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* shoes-add {
+  margin-top: 10px;
+  animation: fadeIn 0.3s ease-in-out;
+} */
+
+.shoes-add p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-left: 17px;
+}
+
+.shoes-sizes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* justify-content: center; */
+    padding-left: 15px;
+    padding-right: 8px;
+}
+
+.shoes-sizes button {
+    border: 1px solid rgb(37, 37, 37);
+    /* padding: 4px;
+  font-size: 12px;
+  background: #fff;
+  cursor: pointer;
+  flex: 1 1 50px;
+  transition: 0.2s; */
+    height: 45px;
+    width: 45px;
+    background: none;
+}
+
+.shoes-sizes button:hover {
+    background: rgb(235, 233, 233);
+    /* color: white; */
+}
+
+.shoe-deta .shoes-add {
+    display: none;
+}
+
+.shoe-deta:hover .shoes-add {
+    display: block;
+    /* height: auto; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+} */
+
+.Men-s-New-Arrivals-foter-taxt-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    text-align: left;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.Men-s-New-Arrivals-foter-taxt-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+    max-width: 100%;
+    margin-top: 20PX;
+}
+
+.Men-s-New-Arrivals-foter-taxt {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.Men-s-New-Arrivals-foter-taxt h1 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+        margin-left: 50PX;
+
+}
+
+.Men-s-New-Arrivals-foter-taxt p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    margin-left: 50PX;
+    max-width: 90%;
+}
+
+.Men-s-New-Arrivals-foter-taxt .divider {
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 30px 0;
+}
+
+.Men-s-New-Arrivals-foter-taxt h2 {
+    
+    font-size: 22px;
+    color: #333;
+        margin-left: 50PX;
+
+}
+
+.Men-s-New-Arrivals-foter-taxt ul {
+    padding-left: 50px;
+    margin-bottom: 30px;
+}
+
+.Men-s-New-Arrivals-foter-taxt li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.Men-s-New-Arrivals-foter-taxt strong {
+    font-weight: 600;
+    color: #333;
+}
+
+.Allbirds-Approach {
+    /* background-color: aqua; */
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.Allbirds-Approach-Card {
+    /* background-color: rgb(0, 182, 182); */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Allbirds-Approach-Cards {
+    /* background-color: rgb(0, 117, 117); */
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.arrival-header{
+    max-width: 100%;
+    height: 350px;
+    background-image: url('new-arrival/top-image.avif');
+    background-position: center;
+    background-size: cover;
+    border: 1px solid;
+   
+}
+
+.arrival-womain{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.arrival-womain link{
+color: black;
+border-bottom: 2px solid black;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .Allbirds-ReRun {
+        flex-direction: column;
+        /* height: 1800px; */
+        min-height: 1000px;
+        justify-content: center;
+        margin-top: 0px;
+    }
+
+    .Allbirds-ReRun img {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .Allbirds-ReRun-taxt {
+        align-items: center;
+        text-align: center;
+        padding-left: 0px;
+
+    }
+
+    .Allbirds-Approach-Card {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .Allbirds-Approach-Cards {
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .Men-s-New-Arrivals-foter-taxt {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .Men-s-New-Arrivals-foter-taxt h1 {
+        font-size: 24px;
+    }
+
+    .Men-s-New-Arrivals-foter-taxt h2 {
+        font-size: 20px;
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .content {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .men-shoes-card {
+        justify-content: center;
+    }
+
+    .shoe-deta {
+        width: 230px;
+        height: auto;
+    }
+
+    .shoes-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .shoes-image img {
+        width: 100%;
+        height: auto;
+    }
+}
