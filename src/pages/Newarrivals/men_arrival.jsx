@@ -1,10 +1,12 @@
 import React from 'react'
+
 import '../Newarrivals/men_arrival.css'
 import { Link } from 'react-router-dom'
-import Women_arrival from './women_arrival'
+// import Women_arrival from './women_arrival'
 
 
 function men_arrival() {
+
    const labels = ["NEW", "BESTSELLER", "EASY ON/OFF", "30% OFF"];
 
 const shoes = [
@@ -28,8 +30,6 @@ const shoes = [
   return (
     <div>
               <div className="arrival-header">
-<h1>hello</h1>
-<h2>hemant</h2>
       </div>
       <div className="arrival-main">
         <Link to={'/men_arrival'}>
