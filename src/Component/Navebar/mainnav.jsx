@@ -37,7 +37,7 @@ const NavMain = () => {
         </ul>
         <div className="nav-icons">
           <Link to="/Search"><FiSearch /></Link>
-          <FaRegUser />
+          <Link to="/Login"><FaRegUser /></Link>
           <Link to="/Help"><MdOutlineHelpOutline /></Link>
           <FaShoppingCart />
         </div>

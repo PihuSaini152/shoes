@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.login-box {
+  background-color: white;
+  width: 400px;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo-text {
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+  color: #444;
+}
+
+.shop-btn {
+  width: 100%;
+  padding: 12px;
+  margin: 20px 0;
+  background-color: #5c3aff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.divider span {
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.divider p {
+  margin: 0 10px;
+  color: #777;
+}
+
+.email-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.continue-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #e5e5e5;
+  color: #999;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.privacy-text {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #666;
+}
