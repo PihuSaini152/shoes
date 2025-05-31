@@ -58,8 +58,8 @@ function slideshoes() {
 };
   return (
     <>
-       <div className='slideshoes'>
-       
+      <div className="slideshoes-main">
+         <div className='slideshoes'>
        <Slider ref={sliderRef} {...settings}>
         {products.map((shoe) => (
           <div key={shoe.id} className="slide-card">
@@ -78,6 +78,7 @@ function slideshoes() {
 
       </div>
     </div>
+      </div>
     </>
   )
 }

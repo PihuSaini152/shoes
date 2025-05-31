@@ -1,19 +1,24 @@
+.slideshoes-main{
+  height: auto;
+  width: 98%;
+}
 .slideshoes {
-  padding: 20px;
+  padding: 50px 0px;
+  padding-left: 25px;
   background: white;
   height: auto;
   position: relative;
 }
 
 .slide-card {
-  padding: 10px;
+  /* padding: 10px; */
   background: #fff;
   text-align: left;
 }
 
 .shoe-img {
-  width: 100%;
-  max-width: 310px;
+  width: 95%;
+  /* max-width: 310px; */
   height: 250px;
   object-fit: contain;
   margin-bottom: 10px;

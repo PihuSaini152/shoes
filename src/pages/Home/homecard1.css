@@ -1,103 +1,161 @@
 .homaecard {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 30px;
-  padding: 20px;
-  padding-top: 70px;
-  padding-bottom: 50px;
-  height: auto;
+  max-width: 1340px;
+  margin: auto;
+  padding: 50px 20px;
 }
 
-.homecardbox {
-  /* background-color: black; */
+/* Slider के अंदर वाले कार्ड्स को थोड़ा एडजस्ट करें */
+.slick-slide > div {
+  margin: 0 5px; /* थोड़ा gap */
+}
+
+/* slick-slider को flex-wrap से हटाएं, क्योंकि slick खुद handle करता है */
+.homaecard {
+  display: block; /* पहले flex था, slider में block रखना बेहतर */
+}
+
+/* आपका homecardbox1,2,3 स्टाइल जैसा रखा है, बस flex-wrap नहीं चाहिए */
+.homecardbox1,
+.homecardbox2,
+.homecardbox3 {
   border: 1px solid #ddd;
-  /* border-radius: 8px; */
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 30vw;
-  height: 550px;
+  height: 600px;
+  padding: 20px;
+  background: #fff;
   position: relative;
-}
-
-.homecard-image:hover {
-  transform: scale(1.04);
-}
-.homecardtext{
-    position: absolute;
-    top: 100px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-}
-.homecard-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* border-radius: 8px; */
-  /* margin-bottom: 10px;    */
-  background: yellow;
-  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  margin: auto; /* center align */
 
 }
-.homecard-image img {
-    height: 300px;
-    border: 4px solid blue;
+
+/* before pseudo-element background images */
+.homecardbox1::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url("/home/homecard1.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(87%);
+  transition: transform 0.4s ease;
+  z-index: 0;
+  transform: scale(1);
+
 }
-.homecardtag {
-  background-color: #ffeb3b;
-  padding: 5px 10px;
-  border-radius: 5px;
-  display: inline-block;
-  margin-top: 10px;
+.homecardbox1:hover::before {
+   filter: brightness(95%);
+  transform: scale(1.2);
+ }
+
+.homecardbox2::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url("/home/homecard2.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(87%);
+  transition: transform 0.4s ease;
+  transform: scale(1);
+  z-index: 0;
 }
-/* Button Hidden by Default */
+.homecardbox2:hover::before {filter: brightness(95%); 
+  transform: scale(1.2);
+ }
+
+.homecardbox3::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url("/home/homecard3.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(87%);
+  transition: transform 0.4s ease;
+  z-index: 0;
+  transform: scale(1);
+
+}
+.homecardbox3:hover::before {
+  transform: scale(1.2);
+   filter: brightness(95%); }
+
+/* Content above before */
+.homecardbox1 > *,
+.homecardbox2 > *,
+.homecardbox3 > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* text and buttons styling जैसे आपने दिया */
+.homecardtext {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  z-index: 2;
+}
+
+.homecardbut1,
+.homecardbut2,
+.homecardbut3,
+.homecardbut {
+  position: absolute;
+  top: 500px; /* थोड़ा ऊपर कर दिया ताकि बटन दिखें */
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+/* Button style */
 .hover-button {
- 
-  /* transform: translate(-50%, -50%); */
   background-color: white;
   color: black;
   border: none;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   cursor: pointer;
   opacity: 0;
-  /* transition: opacity 0.3s; */
-  font-size: 16px;
+  font-size: 18px;
   pointer-events: none;
-  width: 130px;
-  height: 40px;
+  width: 35%;
+  height: 50px;
+  transition: opacity 0.3s ease;
 }
-.hover-button:hover{
-    background-color: black;
-    color: white;
-} 
-/* Show Button on Hover */
-.homecardbox:hover .hover-button {
+
+.hover-button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Show button on card hover */
+.homecardbox1:hover .hover-button,
+.homecardbox2:hover .hover-button,
+.homecardbox3:hover .hover-button {
   opacity: 1;
   pointer-events: auto;
 }
-.homecardbut{
-    position: absolute;
-     top: 350px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-@media (max-width:1000px) {
-  .homecardbox {
-  /* background-color: black; */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 350px;
-  height: 550px;
-  position: relative;
-}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .homecardbox1,
+  .homecardbox2,
+  .homecardbox3 {
+    width: 350px !important;
+    height: 550px;
+    margin: auto;
+  }
 }
